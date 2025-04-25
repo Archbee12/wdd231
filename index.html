@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Portfolio</title>
+  <meta name="description"
+    content="WDD 231 - Web Frontend Development I - Deborah Sarah Okon A project on Website Responsive using Media Query on both Mobiles and large screens." />
+    <meta name="author" content="Deborah Sarah Okon">
+  <link rel="stylesheet" href="styles/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap"
+    rel="stylesheet">
+  <script defer src="scripts/scripts.js"></script>
+
+</head>
+
+<body>
+  <header>
+    <div class="profile">
+      <div class="profile-img">
+        <img src="images/my-image.jpg" alt="Profile Picture">
+      </div>
+      <div class="name">
+        <h1>Deborah S. Okon</h1>
+      </div>
+    </div>
+
+    <div class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html" class="nav-active">Home</a></li>
+        <li><a href="chamber.html">Chamber</a></li>
+        <li><a href="final.html">Final</a></li>
+        <li><a href="#">GitHub Profile</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <main>
+    <h1 class="title">Home</h1>
+    <div class="card">
+      <section class="coursework">
+        <h2>Course Work</h2>
+        <ul id="course-list"></ul>
+      </section>
+      <section class="location">
+        <h2>Toloria, Madagascar</h2>
+        <img src="images/baobab.jpeg" alt="Baobab Trees">
+        <figcaption>Baobab Trees</figcaption>
+      </section>
+    </div>
+      
+
+    
+    <section class="certificate">
+      <h2>Web and Computer Programming Certificate</h2>
+      <div class="course-filters">
+        <button data-filter="all">All</button>
+        <button data-filter="CSE">CSE</button>
+        <button data-filter="WDD">WDD</button>
+      </div>
+      <div id="course-cards"></div>
+    </section>
+  </main>
+  <footer>
+    <p>&copy;<span id="currentYear"> </span> 🌟 Deborah Sarah Okon 🌟 Nigeria </p>
+    <p id="lastModified"> </p>
+  </footer>
+</body>
+
+</html>
