@@ -1,0 +1,35 @@
+[
+  {
+    "name": "Obadara Damilola",
+    "date": "2024-05-12",
+    "records": 7,
+    "visited": "False",
+    "familyMembers": [{
+      "name": "Peniel Obadara",
+      "gender": "Male",
+      "birthdate": "2024-01-31"
+    }]
+  },
+  {
+    "name": "Sarah James",
+    "date": "2024-45-23",
+    "records": 4,
+    "visited": "True",
+    "familyMembers": [{
+      "name": "Mary James",
+      "gender": "Female",
+      "birthdate": "1967-06-06"
+    }]
+  },
+  {
+    "name": "Deborah Okon",
+    "date": "2024-10-12",
+    "records": 3,
+    "visited": "False",
+    "familyMembers": [{
+      "name": "Bernard Okon",
+      "gender": "Male",
+      "birthdate": "1998-05-09"
+    }]
+  }
+]
