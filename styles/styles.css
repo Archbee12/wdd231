@@ -331,7 +331,7 @@ footer {
     display: none;
   }
 
-  nav #grey { background-color: var(--hover-color); }
+  nav .grey { background-color: var(--hover-color); }
 
 
   .hamburger {
