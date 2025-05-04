@@ -273,7 +273,7 @@ footer {
   .profile {
     display: grid;
     justify-content: center;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 80px 1fr 55px;
     flex-wrap: wrap;
   }
 
