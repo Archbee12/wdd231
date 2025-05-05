@@ -94,9 +94,7 @@ document.addEventListener("DOMContentLoaded", () => {
       card.className = `course-card ${course.completed ? "completed" : "not-completed"}`;
       card.innerHTML = `
                 <h3>${course.subject} ${course.number}</h3>
-                <p>${course.title}<p>
                 <p>Credits required: ${course.credits}</p>
-
             `;
       courseButtons.appendChild(card);
     });
