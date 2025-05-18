@@ -99,7 +99,7 @@ function displayMembers(members) {
             <h2>${toTitleCase(member.name)}</h2>
             <p>${toTitleCase(member.address)}</p>
             <p>${member.phone}</p>
-            <a href="${member.url}">Website</a>
+            <a href="${member.url}" target="_blank">Visit Website</a>
         `;
 
         container.appendChild(memberElement);
