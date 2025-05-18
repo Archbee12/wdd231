@@ -7,6 +7,18 @@ hamburger.addEventListener('click', () => {
     hamburger.classList.toggle('active');
   });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const links = document.querySelectorAll(".nav-link");
+    const currentPage = window.location.pathname.split("/").pop();
+
+    links.forEach(link => {
+        if (link.getAttribute("href") === currentPage) {
+            link.classList.add("active");
+        }
+    });
+});
+
+
 const currentYear = document.querySelector("#currentYear");
 
 // use the date object
@@ -42,7 +54,7 @@ themeIcon.addEventListener('click', () => {
 // List / Grid Display
 const gridbutton = document.querySelector("#grid");
 const listbutton = document.querySelector("#list");
-const display = document.querySelector("article");
+const display = document.querySelector("section");
 
 
 gridbutton.addEventListener("click", () => {
