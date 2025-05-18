@@ -95,7 +95,7 @@ function displayMembers(members) {
         memberElement.classList.add('member-card');
 
         memberElement.innerHTML = `
-            <img src="images/${member.imageurl}" alt="${member.name}" width="100" height="100">
+            <img src="images/${member.imageurl}" alt="${member.name}" width="100" height="100" loading="lazy">
             <h2>${toTitleCase(member.name)}</h2>
             <p>${toTitleCase(member.address)}</p>
             <p>${member.phone}</p>
