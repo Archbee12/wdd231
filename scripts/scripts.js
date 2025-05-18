@@ -66,7 +66,6 @@ const navLinks = document.querySelector('nav ul');
 
 document.addEventListener("DOMContentLoaded", () => {
   hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('nav-active');
     navLinks.classList.toggle('show');
     hamburger.classList.toggle('active');
   });
@@ -75,7 +74,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const filters = document.querySelectorAll(".course-filters button");
   const creditDisplay = document.createElement("p");
   creditDisplay.id = "credit-display";
-  courseButtons.parentElement.appendChild(creditDisplay);
+  document.querySelector(".course-filters").after(creditDisplay);
+  // courseButtons.parentElement.appendChild(creditDisplay);
 
   // Function to display courses
   const displayCourses = (filter) => {
