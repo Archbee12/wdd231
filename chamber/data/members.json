@@ -1,0 +1,90 @@
+[
+  {
+    "name": "Company Name",
+    "address": "Address",
+    "phone": "Phone",
+    "url": "Website",
+    "imageurl": "Image",
+    "member_level": "Membership Level"
+  },
+  {
+    "name": "Solutions Limited",
+    "address": "3 BASHIRU ADENIRAN STR, ADONI EST, OJODU BERGER,LAGOS",
+    "phone": "08053339298",
+    "url": "one_sourcefuelltd@yahoo.com",
+    "imageurl": "../images/solution-limited.png",
+    "member_level": "1"
+  },
+
+  {
+    "name": "Century Technologies LTD",
+    "address": "5 Jeremiah Ugwu Str, Lekki Phase 1, Lagos.",
+    "phone": "08033826160",
+    "url": "commercial@21ctl.com",
+    "imageurl": "../images/century.png",
+    "member_level": "3"
+  },
+
+  {
+    "name": "Impex Consulting Limited",
+    "address": "10, OLUKOLE STR, SURULERE,LAGOS",
+    "phone": "08036522946",
+    "url": "info@3timpex.com",
+    "imageurl": "../images/impex.png",
+    "member_level": "2"
+  },
+
+  {
+    "name": "7 Continent Limited",
+    "address": "9B ADEOLA ODEKU STR, VICTORIA ISLAND, LAGOS",
+    "phone": "08028521133",
+    "url": "marykubeyinde@yahoo.com",
+    "imageurl": "../images/continent.png",
+    "member_level": "2"
+  },
+
+  {
+    "name": "A G Leventis PLC",
+    "address": "2, WHARF ROAD, APAPA,",
+    "phone": "08033192797,",
+    "url": "info@agleventis.com",
+    "imageurl": "../images/leventis.png",
+    "member_level": "3"
+  },
+
+  {
+    "name": "Andromeda integrated LTD",
+    "address": "11 ADEBAMBO STR OBANIKORO,LAGOS",
+    "phone": "08023105727,",
+    "url": "aaagosilesons@yahoo.com",
+    "imageurl": "../images/andromeda.png",
+    "member_level": "2"
+  },
+
+  {
+    "name": "Fidelity INVESTMENT LIMITED",
+    "address": "PLOT 54 OGUNTONA CRESCENT,GBAGADA, LAGOS",
+    "phone": "08023093635",
+    "url": "providencehouse@gmail.com",
+    "imageurl": "../images/fidelity.png",
+    "member_level": "1"
+  },
+
+  {
+    "name": "Calvat Solution Limited",
+    "address": "23A GLOVER ROAD IKOYI, LAGOS.",
+    "phone": "08028292481",
+    "url": "info@4teesrentals.com",
+    "imageurl": "../images/calvat.png",
+    "member_level": "2"
+  },
+
+  {
+    "name": "SOURCE FUEL LTD",
+    "address": "3 BASHIRU ADENIRAN STR,LAGOS",
+    "phone": "08053339298",
+    "url": "one_sourcefuelltd@yahoo.com",
+    "imageurl": "../images/source-fuel.png",
+    "member_level": "1"
+  }
+]
