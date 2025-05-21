@@ -13,7 +13,9 @@
     <meta property="og:url" content="https://archbee12.github.io/wdd231/chamber/directory">
     <link rel="stylesheet" href="../styles/normalize.css">
     <link rel="stylesheet" href="styles/directory.css">
+    <link rel="stylesheet" href="styles/base.css">
     <script src="scripts/directory.js" defer></script>
+    <script src="scripts/base.js" defer></script>
     <link rel="icon" href="images/favicon.ico"  class="favicon">
 </head>
 <body>
@@ -52,19 +54,17 @@
     </header>
     <div class="hero">
         <img class="heroimg" loading="lazy" src="images/coc.webp" alt="Chamber of commerce">
+        <!-- <div class="welcome"><h1>WELCOME</h1></div> -->
         <div class="join"><a href="#.html">Join Us</a></div>
     </div>
     <main>
-        <div id="business-container">
-            <h2 class="directory">Business Directory</h2>
-            <div class="menu">
-                <img src="images/grid.svg" alt="grid" id="grid">
-                <img src="images/list.svg" alt="list" id="list">
-            </div>
-            <section class="grid">
-                <div id="cards"></div>
-            </section>
-        </div>
+      <section class="event-weather">
+        <div id="events" class="card"></div>
+        <div id="weather-card" class="card"></div>
+        <div id="weather-forecast" class="card"></div>
+      </section>
+      <section></section>
+      <section></section>
     </main>
     <footer>
         <div class="footer">

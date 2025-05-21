@@ -35,9 +35,27 @@ lastModified.innerHTML = `Last Modified: <span class="highlight">${new Intl.Date
   }
 ).format(today)}</span>`;
 
-// This code is for the theme
+// This code is for the theme (Dark/Light theme)
 const themeIcon = document.getElementById('theme-toggle-icon');
 const body = document.body;
+
+// This is to apply the saved theme not to change theme when switching from one nav to another
+function applyTheme() {
+  const savedTheme = localStorage.getItem('theme');
+  if (savedTheme === 'dark') {
+    body.classList.add('dark-theme');
+    themeIcon.src = 'images/sun.svg';
+    themeIcon.alt = 'Switch to light mode';
+  } 
+  else {
+    body.classList.remove('dark-theme');
+    themeIcon.src = 'images/moon.png';
+    themeIcon.alt = 'Switch to dark mode';
+  }
+}
+
+applyTheme();
+
 
 themeIcon.addEventListener('click', () => {
   body.classList.toggle('dark-theme');
@@ -45,9 +63,12 @@ themeIcon.addEventListener('click', () => {
   if (body.classList.contains('dark-theme')) {
     themeIcon.src = 'images/sun.svg'; // dark mode: show moon
     themeIcon.alt = 'Switch to light mode';
-  } else {
+    localStorage.setItem('theme', 'dark');
+  } 
+  else {
     themeIcon.src = 'images/moon.png'; // light mode: show sun
     themeIcon.alt = 'Switch to dark mode';
+    localStorage.setItem('theme', 'light');
   }
 });
 
@@ -71,13 +92,14 @@ function showList() {
 }
 
 
-// Members.Json 
+// Case Styling i.e, lower case, UPPER CASE, Sentence case, Title Case
 function toTitleCase(str) {
   return str.toLowerCase().split(' ').map(word =>
     word.charAt(0).toUpperCase() + word.slice(1)
   ).join(' ');
 }
 
+// Members.Json 
 const url = 'data/members.json'
 async function fetchMembers() {
   
@@ -99,7 +121,7 @@ function displayMembers(members) {
             <h2>${toTitleCase(member.name)}</h2>
             <p>${toTitleCase(member.address)}</p>
             <p>${member.phone}</p>
-            <a href="${member.url}" target="_blank">Visit Website</a>
+            <a href="${member.url}" target="_blank"><span>Visit</span> Website</a>
         `;
 
         container.appendChild(memberElement);
@@ -108,4 +130,6 @@ function displayMembers(members) {
 
 // Call fetchMembers on page load
 document.addEventListener('DOMContentLoaded', fetchMembers);
+
+
 

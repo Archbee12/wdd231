@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.hero-img {
+  width: 100%;
+  grid-column: 1/4;
+  grid-row: 1/4;
+}
+
+.welcome {
+  grid-column: 2/3;
+  grid-row: 2/2;
+}
+
+.welcome h1 {
+  color: white;
+  text-shadow: 0 0 5px var(--dark-theme);
+}
+
+.event-weather  {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  margin: 20px 20px;
+  gap: 10px;
+}
+
+h2 {
+  display: block;
+  background-color: var(--body-color);
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  padding: .5rem;
+  font-size: 16px;
+}
+
+.event-card {
+  padding: 15px;
+  margin: 1rem .5rem;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.events-container .event-card:nth-child(1) {
+  border-bottom: 2px solid var(--dark-theme);
+}
+
+.card {
+  background-color: var(--accent-color);
+  box-shadow: 0px 1px 3px var(--box-shadow-hover);
+  /* border-radius: 8px; */
+}
+
+#weather-card p {
+  font-size: 12px;
+  padding: 0 .5rem;
+  text-align: left;
+  margin: 10px 0;
+}
+
+.weather-container {
+  display: grid;
+  grid-template-columns: 80px 1fr;
+}
+
+#weather-card img {
+  width: 80px;
+}
+
+.fore-card p {
+  font-size: 12px;
+  padding: 0 .5em;
+  margin: 10px;
+  line-height: 5px;
+}
+
+.forecast-container .fore-card {
+  border-bottom: 1px solid var(--dark-theme);
+}
+
+.fore-card span {
+  font-weight: 700;
+} 
+
+.fore-card:nth-child(3) {
+  border: none;
+  
+}
+
+.fore-weather {
+  font-style: italic;
+  font-size: 10px;
+}
+
+.dark-theme .events-container .event-card:nth-child(1) {
+  border-bottom: 2px solid var(--dark-header-color);
+}
+
+
+.dark-theme .event-card, .dark-theme h4, .dark-theme p {
+  color: var(--dark-header-color);
+}
+
+.dark-theme .card {
+    box-shadow: 0 5px 5px var(--accent-color);
+    color: var(--dark-header-color);
+}
+
+.dark-theme #events, .dark-theme #weather-card, .dark-theme #weather-forecast {
+  background-color: var(--dark-theme);
+}
+
+.dark-theme h2 {
+  color: var(--dark-theme);
+}
+
+@media (max-width: 680px) {
+  .event-weather {
+    display: block;
+  }
+
+  .card {
+    box-shadow: 0 2px 5px var(--box-shadow);
+    margin: 10px;
+  }
+
+  .events-container, .forecast-container {
+    padding: 10px;
+  }
+}
