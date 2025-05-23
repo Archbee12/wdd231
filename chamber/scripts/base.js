@@ -158,6 +158,45 @@ function toTitleCase(str) {
   ).join(' ');
 }
 
+//Spotlight Ads
+// const url = 'data/members.json'
+// async function fetchMembers() {
+  
+//     const response = await fetch(url);
+//     const members = await response.json();
+//     displayMembers(members);
+// }
+fetch("data/members.json")
+  .then(response => response.json())
+  .then(members => {
+    const spotlightMembers = members.filter(member => member.member_level === "2" || member.member_level === "3");
+
+    const shuffledMembers = spotlightMembers.sort(() => 0.5 - Math.random());
+
+    const selectedMembers = shuffledMembers.slice(0, Math.floor(Math.random() * 2) + 2);
+
+    const spotlightContainer = document.getElementById("spotlight");
+    spotlightContainer.innerHTML = selectedMembers.map(member => `
+      <div class="member-container card">
+        <h2 class="name">${toTitleCase(member.name)}</h2>
+        <div class="member-card">
+          <div class="member-img">
+            <img src="images/${member.imageurl}" alt="${member.name}" loading="lazy">
+          </div>
+          <div class="member-info">
+            <p>${member.address}</p>
+            <p>Phone: ${member.phone}</p>
+            <p><a href="${member.url}" target="_blank">Visit Website</a></p>
+            <p><strong>Membership Level:</strong> ${member.member_level === "3" ? "Gold" : "Silver"}</p>
+          </div>
+        </div>
+      </div>
+    `).join("");
+  })
+
+
+
+
 // Forecast
 // function displayForecast(data) {
 //   const forecastCard = document.getElementById('weather-forecast');
