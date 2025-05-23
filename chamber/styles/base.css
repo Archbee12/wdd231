@@ -8,17 +8,10 @@
   grid-column: 1/4;
   grid-row: 1/4;
 }
-/* 
-.welcome {
-  grid-column: 2/3;
-  grid-row: 2/2;
+
+h1 {
+  margin: 20px;
 }
-
-.welcome h1 {
-  color: white;
-  text-shadow: 0 0 5px var(--dark-theme);
-} */
-
 section {
   margin: 20px 20px;
 }
