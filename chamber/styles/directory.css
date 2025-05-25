@@ -9,10 +9,10 @@
     --odd-color: #d9d9d9;
 
     /* dark.bg color */
-    --dark-theme: #1f1f1f;
+    --dark-theme: #282424;
 
-    --dark-primary-color: #280c1b;
-    --dark-secondary-color: #532f43;
+    --dark-primary-color: #22161d;
+    --dark-secondary-color: #36222d;
     --dark-header-color: #ffffff;
     /* --dark-accent-color: #e6dae1; */
     /* --dark-body-color: #ece0e7; */
@@ -79,7 +79,7 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: var(--accent-color);
-    font-size: 16px;
+    font-size: 12px;
 }
 
 .active {
@@ -184,11 +184,11 @@ img {
 .join a {text-decoration: none;}
 
 .join a {
-    font-size: .5rem;
+    font-size: 10px;
     background-color: var(--accent-color);
     box-shadow: 0 2px 10px var(--secondary-color);
     color: var(--secondary-color);
-    padding: .5rem;
+    padding: .5rem 1rem;
     border-radius: 5px;
 }
 

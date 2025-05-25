@@ -27,7 +27,7 @@ const courses = [
     certificate: 'Web and Computer Programming',
     description: 'CSE 111 students become more organized, efficient, and powerful computer programmers by learning to research and call functions written by others; to write, call , debug, and test their own functions; and to handle errors within functions. CSE 111 students write programs with functions to solve problems in many disciplines, including business, physical science, human performance, and humanities.',
     technology: ['Python'],
-    completed: false // Not completed
+    completed: true // Completed
   },
   {
     subject: 'CSE',
@@ -37,7 +37,7 @@ const courses = [
     certificate: 'Web and Computer Programming',
     description: 'This course will introduce the notion of classes and objects. It will present encapsulation at a conceptual level. It will also work with inheritance and polymorphism.',
     technology: ['C#'],
-    completed: false // Not completed
+    completed: true // Completed
   },
   {
     subject: 'WDD',
@@ -120,6 +120,8 @@ courses.forEach(course => {
   courseList.appendChild(listItem);
 })
 
+
+//Last Modified Date and Time
 const currentYear = document.querySelector("#currentYear");
 
 // use the date object
@@ -137,3 +139,32 @@ lastModified.innerHTML = `Last Modified: <span class="highlight">${new Intl.Date
 ).format(today)}</span>`;
 
 
+// Modal Course functionality
+const courseDiv = document.getElementById('course-cards');
+const courseDetails = document.getElementById('course-details');
+
+courseDiv.addEventListener('click', () => {
+  displayCourseDetails(course);
+    
+})
+
+function displayCourseDetails(course) {
+    courseDetails.innerHTML = '';
+    courseDetails.innerHTML = `
+    <button id="closeModal">❌</button>
+    <h2>${course.subject} ${course.number}</h2>
+    <h3>${course.title}</h3>
+    <p>Credits: ${course.credits}</p>
+    <p>${course.description}</p>
+    <p>Technologies: ${course.technology}</p>.join(', ')
+    `;
+    courseDetails.showModal();
+
+    closeModal.addEventListener("click", () => {
+      courseDetails.close();
+    })
+  }
+
+courseDiv.addEventListener('click', () => {
+  displayCourseDetails(courses); // ❌ courses is an array, not a single course object!
+});

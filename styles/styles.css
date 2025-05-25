@@ -206,7 +206,7 @@ figure {
 
 .coursework ul {
   line-height: 200%;
-  font-size: 1rem;
+  font-size: 12px
 }
 
 .course-filters {
@@ -214,6 +214,7 @@ figure {
 }
 
 .course-filters button {
+  font-size: 10px;
   width: 150px;
   padding: 5px 10px;
   cursor: pointer;
@@ -241,6 +242,8 @@ figure {
 
 /*course cards */
 .course-card {
+  font-size: 10px;
+  /* line-height: 5px; */
   padding: 5px;
   margin: 5px;
   border-radius: 5px;
@@ -371,4 +374,27 @@ footer {
   #course-cards {
     display: block;
   }
+}
+
+/* Dialog Modal Styling */
+dialog {
+  border: 1px solid var(--box-shadow);
+  border-radius: .25rem;
+  padding: 1rem;
+  background-color: var(--accent-color);
+  box-shadow: var(--box-shadow);
+  width: 90%;
+  max-width: 600px;
+}
+
+::backdrop {
+  background-color: var(--hover-color);
+}
+
+dialog button {
+  position: absolute;
+  top: 23px;
+  right: 23px;
+  padding: .5rem 1rem;
+  border: 1px solid var(--accent-color);
 }
