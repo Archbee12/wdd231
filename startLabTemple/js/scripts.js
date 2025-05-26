@@ -7,7 +7,7 @@ import {url} from '../data/temples.js'
 const showHere = document.querySelector("#showHere");
 const mydialog = document.querySelector("#mydialog");
 const mytitle = document.querySelector("#mydialog h2");
-const myinfo = document.querySelector("mydialog p");
+const myinfo = document.querySelector("#mydialog p");
 const myclose = document.querySelector("#mydialog button");
 
 myclose.addEventListener("click", () => mydialog.close())
@@ -29,7 +29,7 @@ displayItems(temples)
 
 function showStuff(x) {
   mytitle.innerHTML = x.name
-  // myinfo.textContent =  x.dedicated
+  myinfo.innerHTML = x.dedicated;
 
   mydialog.showModal()
 }
