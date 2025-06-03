@@ -32,7 +32,7 @@ form {
 }
 
 .page-title, .app-form {
-  margin: 20px;
+  margin: 10px 20px;
 }
 
 h3 {
@@ -47,7 +47,7 @@ label {
 }
 
 h3 {
-  font-size: .9rem;
+  /* font-size: .9rem; */
   color: var(--secondary-color);
   margin: 1.5rem 0 .2rem 0;
   /* border-bottom: 1px solid #eee; */
@@ -144,92 +144,6 @@ input:-webkit-autofill{
   box-shadow: 0 4px 5px var(--secondary-color );
 }
 
-.card:hover {
-  transform: scale(1.02);
-}
-
-@media (min-width: 768px) {
-  .cards {
-    flex-direction: row;
-  }
-}
-
-@media (max-width: 760px) {
-  main {
-    display: block;
-  }
-}
-
-.card {
-  transform: translateY(20px);
-}
-
-.details-btn {
-  background-color: var(--secondary-color);
-  color: var(--accent-color);
-  padding: .5rem 1rem;
-  border-radius: 8px;
-  border: none;
-  box-shadow: 0 4px 5px var(--secondary-color );
-  cursor: pointer;
-}
-
-.details-btn:hover {
-  background-color: var(--secondary-color);
-}
-
-dialog {
-  border: 3px solid var(--secondary-color);
-  border-radius: 8px;
-  background-color: var(--body-color);
-  /* padding: 1.5rem; */
-  width: 90%;
-  max-width: 600px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.2);
-}
-
-::backdrop {
-	background-color: var(--secondary-color);
-	backdrop-filter: blur(5px);
-}
-
-dialog button {
-	position: absolute;
-	top: 7px;
-	right: 7px;
-  background-color: var(--accent-color);
-	border: 2px solid var(--primary-color);
-  cursor: pointer;
-}
-
-dialog h2 {
-  padding: 0;
-  margin: 0;
-}
-
-dialog p {
-	font-size: .85rem;
-	line-height: 20px;
-}
-
-dialog li {
-	font-size: .85rem;
-}
-
-/* Initial hidden state */
-dialog[open] {
-  opacity: 0;
-  transform: scale(0.95);
-  animation: fadeIn 0.4s ease forwards;
-}
-
-@keyframes fadeIn {
-  to {
-    opacity: 1;
-    transform: scale(1);
-  }
-}
-
 #membershipCards .card {
     opacity: 0;
     transform: translateY(20px);
@@ -272,6 +186,85 @@ dialog[open] {
   to {
     background-color: var(--body-color); 
     /* color: var(--accent-color); */
+  }
+}
+
+
+@media (min-width: 768px) {
+  .cards {
+    flex-direction: row;
+  }
+}
+
+@media (max-width: 760px) {
+  main {
+    display: block;
+  }
+}
+
+.details-btn {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  padding: .5rem 1rem;
+  border-radius: 8px;
+  border: none;
+  box-shadow: 0 4px 5px var(--secondary-color );
+  cursor: pointer;
+}
+
+.details-btn:hover {
+  background-color: var(--secondary-color);
+}
+
+dialog {
+  border: 3px solid var(--secondary-color);
+  border-radius: 8px;
+  background-color: var(--body-color);
+  /* padding: 1.5rem; */
+  width: 90%;
+  max-width: 600px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+}
+
+::backdrop {
+	background-color: var(--secondary-color / 50%);
+	backdrop-filter: blur(5px);
+}
+
+dialog button {
+	position: absolute;
+	top: 7px;
+	right: 7px;
+  background-color: var(--accent-color);
+	border: 2px solid var(--primary-color);
+  cursor: pointer;
+}
+
+dialog h2 {
+  padding: 0;
+  margin: 0;
+}
+
+dialog p {
+	font-size: .85rem;
+	line-height: 20px;
+}
+
+dialog li {
+	font-size: .85rem;
+}
+
+/* Initial hidden state */
+dialog[open] {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
   }
 }
 
