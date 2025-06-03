@@ -76,10 +76,23 @@ nav ul {
     margin: 10px 20px;
 }
 
+nav ul li {
+    transition: transform 0.3s ease-in;
+}
+
 nav ul li a {
     text-decoration: none;
     color: var(--accent-color);
     font-size: 12px;
+}
+
+nav ul li:hover {
+    /* border-bottom: 1px solid var(--accent-color); */
+    transform: scale(1.2);
+}
+
+nav ul li:nth-child(4):hover {
+    border-bottom: none;
 }
 
 .active {
