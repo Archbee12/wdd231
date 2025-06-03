@@ -213,7 +213,7 @@ input:-webkit-autofill{
 }
 
 .details-btn:hover {
-  background-color: var(--secondary-color);
+  background-color: var(--primary-color);
 }
 
 dialog {
