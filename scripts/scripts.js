@@ -89,27 +89,40 @@ document.addEventListener("DOMContentLoaded", () => {
 		creditDisplay.textContent = `Total Credits: ${totalCredits}`;
 
 		// Create course cards
-		filteredCourses.forEach(course => {
-			const card = document.createElement("div");
-			card.className = `course-card ${course.completed ? "completed" : "not-completed"}`;
-			card.innerHTML = `
-								<h3>${course.subject} ${course.number}</h3>
-								<p>Credits required: ${course.credits}</p>
-						`;
-			courseButtons.appendChild(card);
-		});
+		// filteredCourses.forEach(course => {
+		// 	const card = document.createElement("div");
+		// 	card.className = `course-card ${course.completed ? "completed" : "not-completed"}`;
+		// 	card.innerHTML = `
+		// 						<h3>${course.subject} ${course.number}</h3>
+		// 						<p>Credits required: ${course.credits}</p>
+		// 				`;
+		// 	courseButtons.appendChild(card);
+		// });
 	};
 
 	// Initial display
 	displayCourses("all");
 
-	// Filter functionality
-	filters.forEach(filter => {
-		filter.addEventListener("click", (event) => {
-			const filterType = event.target.getAttribute("data-filter");
-			displayCourses(filterType);
-		});
-	});
+	// // Filter functionality
+	// filters.forEach(filter => {
+	// 	filter.addEventListener("click", (event) => {
+	// 		const filterType = event.target.getAttribute("data-filter");
+	// 		displayCourses(filterType);
+	// 	});
+	// });
+});
+
+// Initial display on page load with filter functionality
+document.addEventListener("DOMContentLoaded", () => {
+  displayCourses();
+
+  // Attach filter event listeners properly
+  document.querySelectorAll(".course-filters button").forEach(filterBtn => {
+    filterBtn.addEventListener("click", (event) => {
+      const filterType = event.target.getAttribute("data-filter");
+      displayCourses(filterType); // Reapply event listeners inside displayCourses()
+    });
+  });
 });
 
 const courseList = document.getElementById("course-list");
@@ -143,11 +156,10 @@ const courseDialog = document.getElementById("course-details");
 const courseCardsContainer = document.getElementById("course-cards");
 
 
-// Function to display the modal with course details
+// Function to display the modal with course details and added completion status
 function displayCourseDetails(course) {
 	const completionStatus = course.completed ? "✅ You have completed this course!" : "❌ This course is not yet completed.";
   const dialogContent = `
-    
 		<div>
       <button id="closeDialog">❌</button>
       <h2>${course.subject} ${course.number}</h2>
@@ -164,6 +176,12 @@ function displayCourseDetails(course) {
 
   document.getElementById("closeDialog").addEventListener("click", () => courseDialog.close());
   courseDialog.showModal();
+
+	courseDialog.addEventListener('click', (e) => {
+    if (e.target === courseDialog) {
+      courseDialog.close();
+    }
+  });
 }
 
 // Function to display courses while keeping event listeners active
@@ -187,17 +205,6 @@ function displayCourses(filter = "all") {
   });
 }
 
-// Initial display on page load
-document.addEventListener("DOMContentLoaded", () => {
-  displayCourses();
 
-  // Attach filter event listeners properly
-  document.querySelectorAll(".course-filters button").forEach(filterBtn => {
-    filterBtn.addEventListener("click", (event) => {
-      const filterType = event.target.getAttribute("data-filter");
-      displayCourses(filterType); // Reapply event listeners inside displayCourses()
-    });
-  });
-});
 
 

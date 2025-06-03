@@ -1,15 +1,15 @@
 :root {
-    --primary-color: #a53774;
-    --secondary-color: #532f43;
-    --header-color: #ffffff;
-    --accent-color: #e6dae1;
-    --body-color: #fdf6f9;
+    --primary-color: rgb(165, 55, 116);
+    --secondary-color: lab(24.46% 20.69 -5.63);
+    --header-color: rgb(255, 255, 255);
+    --accent-color: rgb(230, 218, 225);
+    --body-color: rgb(253, 246, 249);
     --box-shadow: #00000035;
     --box-shadow-hover: #414141c4;
     --odd-color: #d9d9d9;
 
     /* dark.bg color */
-    --dark-theme: #282424;
+    --dark-theme: rgb(40, 36, 36);
 
     --dark-primary-color: #22161d;
     --dark-secondary-color: #36222d;
