@@ -1,3 +1,21 @@
+:root {
+  --primary-color: rgb(165, 55, 116);
+  --secondary-color: lab(24.46% 20.69 -5.63);
+  --header-color: rgb(255, 255, 255);
+  --accent-color: rgb(230, 218, 225);
+  --body-color: rgb(253, 246, 249);
+  --box-shadow: #00000035;
+  --box-shadow-hover: #414141c4;
+  --odd-color: #d9d9d9;
+
+  /* dark.bg color */
+  --dark-theme: rgb(40, 36, 36);
+
+  --dark-primary-color: #22161d;
+  --dark-secondary-color: #36222d;
+  --dark-header-color: #ffffff;
+}
+
 h1 {
   color: var(--secondary-color);
 }
@@ -5,9 +23,12 @@ h1 {
 main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 40px;
-  /* place-content: center; */
+  gap: 20px;
   max-width: 1600px;
+}
+
+form {
+  margin-left: 20px;
 }
 
 .page-title, .app-form {
@@ -18,94 +39,90 @@ h3 {
   grid-column: 1/ -1;
 }
 
-form {
-  margin-left: 20px;
-  
-  label {
-    display: block;
-    font-size: .90rem;
-    color: var(--primary-color);
-    padding-top: .2rem;
-  }
+label {
+  display: block;
+  font-size: .90rem;
+  color: var(--primary-color);
+  padding-top: .2rem;
+}
 
-  h3 {
-    font-size: .9rem;
-    color: var(--secondary-color);
-    margin: 1.5rem 0 .2rem 0;
-    /* border-bottom: 1px solid #eee; */
-  }
+h3 {
+  font-size: .9rem;
+  color: var(--secondary-color);
+  margin: 1.5rem 0 .2rem 0;
+  /* border-bottom: 1px solid #eee; */
+}
 
-  input[type=text],
-  input[type=tel],
-  input[type=date],
-  input[type=email],
-  textarea,
-  select {
-    display: block;
-    margin: .1rem 0 1rem 0 ;
-    padding: .3rem;
-    border: 1px solid var(--secondary-color);
-    border-radius: 4px;
-    border-left-width: 5px;
-    border-left-color:#555;
-    font-size: 1rem;
-    color: #3D405B;
-    width: 100%;
-    max-width: 90%;
-  }
+input[type=text],
+input[type=tel],
+input[type=date],
+input[type=email],
+textarea,
+select {
+  display: block;
+  margin: .1rem 0 1rem 0 ;
+  padding: .3rem;
+  border: 1px solid var(--secondary-color);
+  border-radius: 4px;
+  border-left-width: 5px;
+  border-left-color:#555;
+  font-size: 1rem;
+  color: #3D405B;
+  width: 100%;
+  max-width: 90%;
+}
 
-  input:required {border-left-color: #d70000;}
-  input:focus {border-left-color: black; outline:none;}
-  input:required:valid{border-left-color: green;}
+input:required {border-left-color: #d70000;}
+input:focus {border-left-color: black; outline:none;}
+input:required:valid{border-left-color: green;}
 
-  input[type=radio] {
-    margin: .5rem;
-  }
+input[type=radio] {
+  margin: .5rem;
+}
 
-  textarea {
-    height: 100px;
-  }
+textarea {
+  height: 100px;
+}
 
-  input[type=submit] {
-    border: none;
-    text-align: center;
-    background-color: var(--secondary-color);
-    color: white;
-    border-radius: 1rem;
-    padding: .75rem 1.5rem;
-    margin: 2rem 0;
-    font-size: 1rem;
-    -webkit-appearance: none;
-    appearance: none;
-    cursor: pointer;
-  }
+input[type=submit] {
+  border: none;
+  text-align: center;
+  background-color: var(--secondary-color);
+  color: white;
+  border-radius: 1rem;
+  padding: .75rem 1.5rem;
+  margin: 2rem 0;
+  font-size: 1rem;
+  -webkit-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
 
-  input[type=submit]:hover {
-    background-color: var(--primary-color);
-  }
-  }
-  input:-webkit-autofill{
-    -webkit-text-fill-color: #3D405B;
-  }
+input[type=submit]:hover {
+  background-color: var(--primary-color);
+}
 
-  .thankyou {
-    display: block;
-  }
+input:-webkit-autofill{
+  -webkit-text-fill-color: #3D405B;
+}
 
-  .thankyou h1 {
-    margin: 20px;
-  }
-  
-  #results {
-    grid-column: 1/ -1;
-    background-color: #F4F1DE;
-    padding: 0 1rem;
-    border: 1px solid #E07A5F;
-    border-radius: 6px;
-    max-width: 780px;
-    margin: 20px;
-  }
+.thankyou {
+  display: block;
+}
 
+.thankyou h1 {
+  margin: 20px;
+}
+
+#results {
+  grid-column: 1/ -1;
+  background-color: #F4F1DE;
+  padding: 0 1rem;
+  border: 1px solid #E07A5F;
+  border-radius: 6px;
+  max-width: 780px;
+  margin: 20px;
+}
 
 /* Membership Card */
 .cards-container {
@@ -172,7 +189,7 @@ dialog {
 }
 
 ::backdrop {
-	background-color: var(--secondary-color / 50%);
+	background-color: var(--secondary-color);
 	backdrop-filter: blur(5px);
 }
 
@@ -199,6 +216,19 @@ dialog li {
 	font-size: .85rem;
 }
 
+/* Initial hidden state */
+dialog[open] {
+  opacity: 0;
+  transform: scale(0.95);
+  animation: fadeIn 0.4s ease forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
 
 #membershipCards .card {
     opacity: 0;
@@ -207,19 +237,19 @@ dialog li {
 }
 
 #membershipCards .card:nth-of-type(1) {
-    animation-delay: 1s, 0s;
+  animation-delay: 1s, 0s;
 }
 
 #membershipCards .card:nth-of-type(2) {
-    animation-delay: 0.3s, 0.2s;
+  animation-delay: 0.3s, 0.2s;
 }
 
 #membershipCards .card:nth-of-type(3) {
-    animation-delay: 0.5s, 0.4s;
+  animation-delay: 0.5s, 0.4s;
 }
 
 #membershipCards .card:nth-of-type(4) {
-    animation-delay: 0.7s, 0.6s;
+  animation-delay: 0.7s, 0.6s;
 }
 
 @keyframes fadeSlideUp {
@@ -246,17 +276,15 @@ dialog li {
 }
 
 .dark-theme h1 {
-    color: var(--dark-header-color);
+  color: var(--dark-header-color);
 }
 
-.dark-theme form {
-  label {
-    color: var(--dark-header-color);
-  }
+.dark-theme form label {
+  color: var(--dark-header-color);
+}
 
-  h3 {
+.dark-theme form h3 {
     color: var(--accent-color);
-  }
 }
 
 .dark-theme #membershipCards .card {
