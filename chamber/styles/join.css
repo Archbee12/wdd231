@@ -23,7 +23,7 @@ form {
 
     h3 {
       font-size: .9rem;
-      color: #E07A5F;
+      color: var(--secondary-color);
       margin: 1.5rem 0 .2rem 0;
       /* border-bottom: 1px solid #eee; */
     }
@@ -141,7 +141,7 @@ form {
 }
 
 .details-btn {
-  background-color: var(--primary-color);
+  background-color: var(--secondary-color);
   color: var(--accent-color);
   padding: .5rem 1rem;
   border-radius: 8px;
@@ -247,6 +247,9 @@ dialog li {
   label {
     color: var(--dark-header-color);
   }
+
+  h3 {
+    color: var(--accent-color);
 }
 
 .dark-theme #membershipCards .card {
