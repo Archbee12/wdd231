@@ -33,7 +33,7 @@ lastModified.innerHTML = `Last Modified: <span class="highlight">${new Intl.Date
     dateStyle: "medium",
     timeStyle: "medium",
   }
-).format(today)}</span>`;
+).format(oLastModif)}</span>`;
 
 // This code is for the theme (Dark/Light theme)
 const themeIcon = document.getElementById('theme-toggle-icon');

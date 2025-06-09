@@ -78,7 +78,6 @@ const getString = window.location.search;
 const myinfo = new URLSearchParams(getString);
 const timestampEl = myinfo.get('timestamp');
 
-
 const date = new Date();
 
 const options = {
@@ -99,22 +98,22 @@ document.querySelector('#results').innerHTML= `
 <p><strong>Submitted At:</strong> ${isNaN(date) ? 'Invalid date' : date.toLocaleDateString(undefined, options)}</p>
 `
 
-//Dynamically generated membership card
-function generateMembershipCards() {
-  const container = document.getElementById("membershipCards");
-  container.innerHTML = " "; 
+// //Dynamically generated membership card
+// function generateMembershipCards() {
+//   const container = document.getElementById("membershipCards");
+//   container.innerHTML = " "; 
 
-  membershipLevels.forEach(level => {
-    const cardHTML = `
-      <div class="card">
-        <h3>${level.name}</h3>
-        <p>${level.description}</p>
-        <button type="button" data-modal="${level.id}">View Benefits</button>
-      </div>
-    `;
-    container.innerHTML += cardHTML;
-  });
-}
+//   membershipLevels.forEach(level => {
+//     const cardHTML = `
+//       <div class="card">
+//         <h3>${level.name}</h3>
+//         <p>${level.description}</p>
+//         <button type="button" data-modal="${level.id}">View Benefits</button>
+//       </div>
+//     `;
+//     container.innerHTML += cardHTML;
+//   });
+// }
 
 document.addEventListener("DOMContentLoaded", () => {
   generateMembershipCards();
