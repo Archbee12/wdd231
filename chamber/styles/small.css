@@ -13,30 +13,36 @@
   "address";
 }
 
+main h1 {
+  margin: 10px 20px;
+  color: var(--secondary-color);
+
+}
+
 #cards {
   display: block;
 }
 
 #cards div img {
   grid-area: image;
-  place-self: center;
 }
 
 #cards div h2 {
-  margin: 1rem;
+  margin: 0.5rem 1rem 0.25rem 1rem;
   grid-area: name;
 }
 
-.interest-card p {
-  margin: 1rem;
+#cards div p {
+  margin: 0.25rem 1rem;
 }
 
-#cards div .interest-card.p:nth-child(1) {
+#cards .description {
   grid-area: description;
 }
 
-#cards div .interest-card p:nth-child(2) {
+#cards .address {
   grid-area: address;
+  font-style: italic;
 }
 
 #visit-message {

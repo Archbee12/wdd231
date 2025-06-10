@@ -239,6 +239,7 @@ main {
 
 .directory {
     text-align: center;
+    color: var(--secondary-color);
 }
 
 #cards {

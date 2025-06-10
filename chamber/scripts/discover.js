@@ -24,8 +24,8 @@ function displayInterest(interests) {
       <img src="images/${interest.imageUrl}" alt="${interest.name}" loading="lazy">
     
       <h2>${interest.name}</h2>
-      <p>${interest.description}</p>
-      <p>${interest.location}</p>
+      <p class="description">${interest.description}</p>
+      <p class="address">${interest.location}</p>
     `;
 
     interestContainer.appendChild(interestElement);
@@ -34,16 +34,12 @@ function displayInterest(interests) {
 fetchInterests();
 
 
-// Get reference to the sidebar element
+
+
 const visitMessage = document.getElementById('visit-message');
-
-// Get the current date and time
 const now = Date.now();
-
-// Try to retrieve the last visit from localStorage
 const lastVisit = localStorage.getItem('lastVisit');
 
-// Function to calculate days between two timestamps
 function getDaysBetween(current, previous) {
   const millisecondsPerDay = 1000 * 60 * 60 * 24;
   return Math.floor((current - previous) / millisecondsPerDay);
@@ -52,7 +48,6 @@ function getDaysBetween(current, previous) {
 let message = '';
 
 if (!lastVisit) {
-  // First-time visitor
   message = "Welcome! Let us know if you have any questions.";
 } else {
   const daysSinceLastVisit = getDaysBetween(now, Number(lastVisit));
@@ -65,9 +60,7 @@ if (!lastVisit) {
   }
 }
 
-// Display the message
 visitMessage.textContent = message;
 
-// Store the current date/time for future visits
 localStorage.setItem('lastVisit', now);
 
