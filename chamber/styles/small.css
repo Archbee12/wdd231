@@ -1,0 +1,45 @@
+#cards div {
+  border-radius: 8px;
+  border: 2px solid var(--primary-color);
+  background-color: var(--accent-color);
+  overflow: hidden;
+  margin: 20px;
+
+  display: grid;
+  grid-template-areas: 
+  "name"
+  "image"
+  "description"
+  "address";
+}
+
+#cards {
+  display: block;
+}
+
+#cards div img {
+  grid-area: image;
+  place-self: center;
+}
+
+#cards div h2 {
+  margin: 1rem;
+  grid-area: name;
+}
+
+.interest-card p {
+  margin: 1rem;
+}
+
+#cards div .interest-card.p:nth-child(1) {
+  grid-area: description;
+}
+
+#cards div .interest-card p:nth-child(2) {
+  grid-area: address;
+}
+
+#visit-message {
+  padding: 20px;
+  text-align: center;
+}

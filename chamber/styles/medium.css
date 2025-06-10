@@ -1,0 +1,21 @@
+@media only screen and (min-width: 38rem) {
+  #cards div {
+    grid-template-areas: 
+    "image name"
+    "image description"
+    "image address";
+  }
+
+  #cards div img {
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+    transition: filter 0.3s ease; /* Smooth transition */
+    filter: brightness(70%);
+  }
+
+  #cards div img:hover {
+    filter: brightness(100%);
+  }
+
+}

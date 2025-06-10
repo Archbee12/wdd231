@@ -1,17 +1,63 @@
 [
   {
+    "imageUrl": "../images/canopy.webp",
     "name": "Lekki Conservation Centre",
-    "address": "Lekki Conservation Centre Rd, Lekki Penninsula II, Lekki 106104, Lagos", 
-    "description": "The Lekki Conservation Center in Lekki, Nigeria, is an oasis of nature within the urban chaos of Lagos, and the suspended canopy walkway that rises over the reserve is the longest in all of Africa."
+    "location": "Lekki Conservation Centre Rd, Lekki Penninsula II, Lekki 106104, Lagos", 
+    "description": "A nature reserve with the longest canopy walkway in Africa and rich biodiversity."
   },
 
   {
+    "imageUrl": "../images/afac.webp",
     "name": "Annang Festival of Arts & Culture (AFAC)",
-    "address": "Ikot Ekpene, Akwa-Ibom",
-    "description": "AFAC is more than just a festival; it's a strategic model for effective travel, trade, business, and enduring unity through cultural synergy."
+    "location": "Ikot Ekpene, Akwa-Ibom",
+    "description": "AFAC is more than just a festival; it’s a celebration of the rich cultural heritage of the Annang people."
   },
-
   {
-    "name": ""
+    "imageUrl": "../images/zuma.webp",
+    "name": "Zuma Rock",
+    "location": "Madalla, Niger State",
+    "description": "A giant monolith considered the 'Gateway to Abuja', famous for its human-like facial features."
+  },
+  {
+    "imageUrl": "../images/olumo.webp",
+    "name": "Olumo Rock",
+    "location": "Abeokuta, Ogun State",
+    "description": "A historic rock used as a fortress during inter-tribal wars, offering panoramic views of Abeokuta."
+  },
+  {
+    "imageUrl": "../images/yankari.webp",
+    "name": "Yankari National Park",
+    "location": "Bauchi State",
+    "description": "Nigeria's largest wildlife park, home to elephants, baboons, and warm spring pools."
+  },
+  {
+    "imageUrl": "../images/nike.webp",
+    "name": "Nike Art Gallery",
+    "location": "Lekki, Lagos State",
+    "description": "One of the largest art galleries in West Africa showcasing Nigerian art and culture."
+  },
+  {
+    "imageUrl": "../images/idanre.webp",
+    "name": "Idanre Hills",
+    "location": "Idanre, Ondo State",
+    "description": "Ancient hills with historical significance and breathtaking scenery."
+  },
+  {
+    "name": "Obudu Mountain Resort",
+    "location": "Cross River State",
+    "description": "A highland resort known for its cool climate, cable cars, and lush landscape.",
+    "imageUrl": "obudu.jpeg"
+  },
+  {
+    "imageUrl": "../images/awhum.webp",
+    "name": "Awhum Waterfall and Cave",
+    "location": "Enugu State",
+    "description": "A spiritual and tourist site with a beautiful waterfall cascading over a cave."
+  },
+  {
+    "imageUrl": "../images/tarkwa.webp",
+    "name": "Tarkwa Bay",
+    "location": "Lagos State",
+    "description": "A sheltered beach accessible by boat, ideal for surfing, swimming, and picnics."
   }
 ]

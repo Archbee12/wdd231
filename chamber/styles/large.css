@@ -1,0 +1,12 @@
+@media only screen and (min-width: 64rem) {
+  #cards {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+
+  /* #cards h2, #cards p{
+    margin: 0;
+  } */
+
+}

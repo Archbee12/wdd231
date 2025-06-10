@@ -1,33 +1,3 @@
-// const events = document.querySelector('#events');
-// const currentWeather = document.querySelector('#current-weather');
-// const weatherForecast = document.querySelector('#weather-forecast');
-
-// function displayEvents
-
-// try {
-//     const response = await fetch('data/events.json'); // Fetch JSON file
-//     const events = await response.json(); // Convert response to JSON
-    
-//     const container = document.getElementById("events");
-//     container.innerHTML = ""; // Clear existing content
-//     const eventHeading = document.createElement("h2");
-//     eventHeading.textContent = `Upcoming Events`;
-//     container.appendChild(eventHeading);
-
-//     events.forEach(event => {
-//       const card = document.createElement("div");
-//       card.classList.add("event-card");
-
-//       card.innerHTML = `
-//         <h4>${event.title}</h4>
-//         <p>Date: ${event.date}</p>
-//       `;
-
-//       container.appendChild(card);
-//     });
-//   } catch (error) {
-//     console.error("Error fetching events:", error);
-//   }
 
 async function displayEvents() {
   try {
