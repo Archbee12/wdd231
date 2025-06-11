@@ -421,6 +421,10 @@ body.dark-theme {
     color: var(--body-color);
 }
 
+.dark-theme h1 {
+    color: var(--body-color);
+}
+
 .dark-theme header, .dark-theme footer {
     background-color: var(--dark-primary-color);
 }

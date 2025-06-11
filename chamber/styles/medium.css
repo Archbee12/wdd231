@@ -18,4 +18,13 @@
     filter: brightness(100%);
   }
 
+  #cards div h2 {
+    margin: 1rem 1rem .25rem 1rem;
+    grid-area: name;
+  }
+
+  #cards div p {
+    margin: .25rem 1rem;
+  }
+
 }

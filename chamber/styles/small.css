@@ -1,6 +1,7 @@
 #cards div {
   border-radius: 8px;
   border: 2px solid var(--primary-color);
+  box-shadow: 0 5px 5px var(--box-shadow);
   background-color: var(--accent-color);
   overflow: hidden;
   margin: 20px;
@@ -28,12 +29,12 @@ main h1 {
 }
 
 #cards div h2 {
-  margin: 0.5rem 1rem 0.25rem 1rem;
+  margin: 1rem;
   grid-area: name;
 }
 
 #cards div p {
-  margin: 0.25rem 1rem;
+  margin: 1rem;
 }
 
 #cards .description {
@@ -48,4 +49,10 @@ main h1 {
 #visit-message {
   padding: 20px;
   text-align: center;
+}
+
+.dark-theme #cards .interest-card {
+  background-color: var(--dark-theme);
+  box-shadow: 0 5px 5px var(--accent-color);
+  /* border: none; */
 }
