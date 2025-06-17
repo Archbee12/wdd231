@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU Portal Clone Page</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/certificate.css">
+    <link rel="stylesheet" href="styles/program.css">
+    <script defer src="scripts/script.js"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/holds.mjs" type="module"></script>
+</head>
+
+<body>
+  <div class="container">
+      <div class="lef">
+          <p>Hello Deborah Sarah</p>
+      </div>
+      <div><button>Logout</button></div>
+  </div>
+  <header class="card">
+    <div class="logo">
+      <div>
+          <a href="index.html">
+              <img src="images/logo.png" G alt="">
+          </a>
+      </div>
+
+      <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    </div>
+      <div class="icons-sm">
+        <div id="current-date">
+        </div>
+        <div class="icons">
+          <div class="icons-container">
+            <img src="/icons/error.svg" alt="">
+            <div class="icons-count">0</div>
+            <div class="tooltip">Hold</div>
+
+            <div class="custom-dialog" id="holds-dialog"></div>
+
+          </div>
+          <div class="icons-container">
+            <img src="/icons/notifications.svg" alt="">
+            <div class="icons-count">0</div>
+            <div class="tooltip">Alert</div>
+
+            <div class="custom-dialog" id="holds-dialog"></div>
+          </div>
+        </div>
+      </div>
+      <nav class="nested-links">
+        <div id="academics" class="menu-item">
+          <div class="menu-title">Academics</div>
+          <div class="menu-dropdown">
+            <a href="program.html" class="active">My Program</a>
+            <a href="certificate.html">Certificates and Degrees</a>
+            <!-- <a href="#">Degree Progress Audit</a> -->
+            <a href="class-schedule.html">Class Schedule</a>
+            <!-- <a href="#">Gatherings</a> -->
+            <!-- <a href="#">Go to Class</a> -->
+            <!-- <a href="#">Go to EnglishConnect</a> -->
+          </div>
+        </div>
+
+        <!-- <div id="profile" class="menu-item">
+          <div class="menu-title">My Profile</div>
+          <div class="menu-dropdown">
+            <a href="#">Message Center</a>
+            <a href="#">My Information</a>
+            <a href="#">Privacy Settings</a>
+            <a href="#">Username & Emails</a>
+          </div>
+        </div>
+        <div id="finances" class="menu-item">
+          <div class="menu-title">Finances</div>
+          <div class="menu-dropdown">
+            <a href="#">Account Information</a>
+            <a href="#">Tuition Discount</a>
+            <a href="#">Pay Tuition</a>
+          </div>
+        </div>
+        <div class="menu-title">Documents</div>
+        <div class="menu-title">Resources</div>
+        <div class="menu-title">Support</div>
+      </nav> -->
+    </header>
+
+    <main>
+      <div class="card-grid">
+        <div class="card">
+          <section class="content">
+            <h1>My Program</h1>
+          
+            <p>Manage your education options and the accreditations you plan to complete.</p>
+
+            <!-- <label for="programs"> Program Details </label>
+            <select id="programs" type="button" name="program" required autofocus>
+              <option value="" disabled selected hidden>Choose Action</option>
+              <option value="add">
+                <a href="addprogram">Add Program</a>
+              </option>
+            </select> -->
+
+            <div class="col">
+              <div class="p-left">
+                <p class="right">Status: <span>Enrolled</span></p>
+                <p class="left">Certificates & Degrees</p>
+              </div>
+              <div class="p-right">
+                <p class="right">🖊
+                  <a href="certificate.html"> Choose Career Path
+                  </a>
+                </p>
+                <p class="left">Career Path</p>
+              </div>
+            </div>
+          </section>
+          
+          <section class="content">
+            <h1>Certificates and Degrees</h1>
+
+            <p class="path">Current Career Path</p>
+            <!-- <button>Choose a Path</button> -->
+            <h5>Projected Graduation Term: 2025 Term 4</h5>
+
+            <h3>Certificate and Degrees</h3>
+
+            <div class="degrees">
+              <h4>Degrees</h4>
+              <h5>Associate Degree</h5>
+              <p>Software Development</p>
+              <h5>Bachelor's Degree</h5>
+              <p>Software Development</p>
+            </div>
+            
+            <hr>
+
+            <div class="certificates">
+              <h4>Certificates</h4>
+              <h5>Certificate 1</h5>
+              <p>Web & Computer Programming</p>
+              <h5>Certificate 2</h5>
+              <p>Web Development</p>
+              <h5>Certificate 3</h5>
+              <p>Software Development</p>
+            </div>
+                
+          </section>
+        </div>
+      </div> 
+    </main>
+    <footer>
+      <hr>
+        <div id="footer">
+            <div> 
+                <p>Version: 25.1.2.2</p>
+            </div>
+            <div class="footer-nav">
+                <p><a href="index.html">Home</a></p>
+                <p>|</p> 
+                <p><a href="#">Logout</a></p>
+                <p>| |</p>  
+                <p><a href="#">Site Index</a></p>
+            </div>
+        </div>
+
+    </footer>
+</body>
+
+</html>

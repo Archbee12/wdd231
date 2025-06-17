@@ -1,20 +1,189 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Deborah Okon - Portfolio Home</title>
-  <meta name="description" content="Deborah Okon - Frontend Developer & Web Designer. Explore my portfolio of responsive websites, Javascript projects, and clean, accessbile code. Contact me to collaborate on your next digital solution.">
-  <meta name="author" content="Your Full Name">
-  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
-  <!-- Open Graph (for social media sharing) -->
-  <meta property="og:title" content="Deborah Okon - Portfolio - Home">
-  <meta property="og:description" content="I'm Deborah Okon, a software developer passionate about building user-friendly web apps. View my work and get in touch to start your project.">
-  <meta property="og:image" content="images/share-image.jpg">
-  <meta property="og:url" content="https://yourdomain.com/projects.html">
 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BYU Portal Clone Page</title>
+    <link rel="stylesheet" href="../wdd231/styles/normalize.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script defer src="scripts/script.js" type="module"></script>
+    <script defer src="scripts/navigation.js"></script>
+    <script defer src="scripts/holds.mjs" type="module"></script>
 </head>
+
 <body>
-  
+    <div class="container">
+        <div class="lef">
+            <p>Hello Deborah Sarah</p>
+        </div>
+        <div><button>Logout</button></div>
+    </div>
+    <header class="card">
+        <div class="logo">
+            <div>
+                <a href="index.html">
+                    <img src="images/logo.png" G alt="">
+                </a>
+            </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <div class="icons-sm">
+            <div id="current-date">
+            </div>
+            <div class="icons">
+                <div class="icons-container">
+                    <img src="/icons/error.svg" alt="">
+                    <div class="icons-count">0</div>
+                    <div class="tooltip">Hold</div>
+
+                    <div class="custom-dialog" id="holds-dialog"></div>
+
+                </div>
+                <div class="icons-container">
+                    <img src="/icons/notifications.svg" alt="">
+                    <div class="icons-count">0</div>
+                    <div class="tooltip">Alert</div>
+
+                    <div class="custom-dialog" id="holds-dialog"></div>
+
+                </div>
+            </div>
+        </div>
+        <nav class="nested-links">
+            <div id="academics" class="menu-item">
+                <div class="menu-title">Academics</div>
+                <div class="menu-dropdown">
+                    <a href="program.html">My Program</a>
+                    <a href="certificate.html">Certificates and Degrees</a>
+                    <a href="#">Degree Progress Audit</a>
+                    <a href="class-schedule.html">Class Schedule</a>
+                    <a href="#">Gatherings</a>
+                    <a href="#">Go to Class</a>
+                    <a href="#">Go to EnglishConnect</a>
+                </div>
+            </div>
+
+            <!-- <div id="profile" class="menu-item">
+                <div class="menu-title">My Profile</div>
+                <div class="menu-dropdown">
+                    <a href="#">Message Center</a>
+                    <a href="#">My Information</a>
+                    <a href="#">Privacy Settings</a>
+                    <a href="#">Username & Emails</a>
+                </div>
+            </div>
+            <div id="finances" class="menu-item">
+                <div class="menu-title">Finances</div>
+                <div class="menu-dropdown">
+                    <a href="#">Account Information</a>
+                    <a href="#">Tuition Discount</a>
+                    <a href="#">Pay Tuition</a>
+                </div>
+            </div>
+            <div id="document" class="menu-item">
+                <div class="menu-title">Documents</div>
+                <div class="menu-dropdown">
+                    <a href="#">Credit Transfer</a>
+                    <a href="#">Document Center</a>
+                    <a href="#">Transcripts</a>
+                </div>
+            </div>
+            <div id="resources" class="menu-item">
+                <div class="menu-title">Resources</div>
+                <div class="menu-dropdown">
+                    <a href="#">Account Information</a>
+                    <a href="#">Tuition Discount</a>
+                    <a href="#">Pay Tuition</a>
+                </div>
+            </div>
+            <div id="support" class="menu-item">
+                <div class="menu-title">Support</div>
+                <div class="menu-dropdown">
+                    <a href="#">Student Software</a>
+                    <a href="#">Careers</a>
+                    <a href="#">Academic Tools</a>
+                </div>
+            </div> -->
+            <!-- <div class="menu-title"></div>
+            <div class="menu-title"></div>
+            <div class="menu-title">Support</div> -->
+        </nav>
+    </header>
+
+    <main>
+        <div class="card-grid">
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Programs of Study</h2>
+                    <div class="card-info">
+                        <p>You currently have 8 active enrollments. You can view all of your enrollments on the
+                            <a href="#">Degree Progress Audit</a>
+                        </p>
+                    </div>
+                    <div>
+                        <p>Religion <br> GPA: 0.00</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Financials</h2>
+                    <p>Current Balance: <strong>$208.75</strong></p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Holds & Alerts</h2>
+                    <p>You have 0 holds.<br> You have 1 alert.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Document Center</h2>
+                    <p>No documents due.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="card-body">
+                    <h2 class="card-title">Classes</h2>
+                    <div class="terms">
+                        <div><p class="term">25T3</p></div>
+                        <div class="tooltip">2025 Term 3</div>
+                    </div>
+
+                    <div id="courses-details"></div>
+                    <dialog id="courseModal" class="course-modal"></dialog>
+                </div>
+            </div>
+        </div>
+
+        
+    </main>
+    <footer>
+      <hr>
+        <div id="footer">
+            <div class="footer-left"> 
+                <p>Version: 25.1.2.2</p>
+            </div>
+            <div class="footer-nav">
+                <p><a href="index.html">Home</a></p>
+                <p>| </p> 
+                <p><a href="#">Logout</a></p>
+                <p>| |</p>  
+                <p><a href="#">Site Index</a></p>
+            </div>
+        </div>
+
+    </footer>
 </body>
+
 </html>

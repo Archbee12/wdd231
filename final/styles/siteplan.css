@@ -7,13 +7,12 @@
 :root {
   --primary-color: #066587;;
   --secondary-color: rgb(24, 79, 99);
-  --transparent-color: rgba(24, 79, 99, 0.717);;
-  --header-color: rgb(1, 23, 17);
-  --accent-color: #d1e8f0;
-  --body-color: #d0dfe49e;
-  --sm-nav-color: #2525257e;
-  --section-color: #0778ce;
-  --font-color: #02528b;
+
+  /* Pages color */
+  --body-color: #e1e2e2;
+	--secondary-color: #ffffff;
+	--accent-color: #ffcd18;
+	--font-color: #333;
 }
 
 html {
@@ -148,7 +147,7 @@ main ul li {
 }
 
 .primary {
-  background-color: var(--primary-color);
+  background-color: var(--body-color);
 }
 .secondary {
   background-color: var(--secondary-color);
@@ -176,6 +175,11 @@ figcaption {
   text-align: center;
   font-style: italic;
   margin: 5px;
+}
+
+.small img {
+  width: 50%;
+  height: 50%;
 }
 
 @media (max-width: 590px) {

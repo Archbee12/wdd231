@@ -4,7 +4,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Chamber of Commerce Siteplan</title>
+  <title>BYU-I Cloned Portal - Siteplan</title>
+  <link rel="stylesheet" href="../styles/normalize.css">
   <link rel="stylesheet" href="styles/siteplan.css">
   <script defer src="scripts/siteplan.js"></script>
 </head>
@@ -13,7 +14,7 @@
   <header id="header">
     <div class="heading">
       <img src="../images/mylogo.png" alt="">
-      <h1>WDD231 - Chamber of Commerce Siteplan</h1>
+      <h1>BYU-I Cloned Portal - Siteplan</h1>
     </div>
     <nav>
       <ul>
@@ -26,38 +27,44 @@
   <main>
     <section id="siteplan">
       <h2>Site Name</h2>
-      <p>Obasarpen Chamber of Commerce</p>
+      <p>BYUI Cloned</p>
       <h2>Site Purpose</h2>
-      <p>Obasarpen is committed to consistently promoting a conducive business environment and delivering value to its
-        stakeholders. The organization serves as a platform for individual business professionals and entrepreneurs,
-        providing support through advocacy, policy engagement, and value-driven initiatives that encourage free
-        enterprise and sustainable economic growth.</p>
-      <h2>Target Market</h2>
-      <p>Business owners and patrons in the city of Timbuktu and surrounding areas.</p>
-      <h2>Site Goals</h2>
+      <p>The purpose of this project is to design and build a personalized, student-centered portal inspired by the official BYU-Idaho portal. This site will serve as both a functional homepage and a course documentation tool, providing an organized and visually familiar interface that mimics the original BYUI student experience.</p>
+      <h2>Project Overview</h2>
+      <p>This project will replicate key design elements of the BYUI portal to create a customized student dashboard. The homepage will feature navigation links, a welcome section, and a layout similar to the official portal. In addition to the visual clone, this site will include a Courses section where I will document all the courses I am taking. Each course will display details such as the course name, description, credits. Users will be able to click on course cards to view more information in a modal dialog.</p>
+      <h3>Planned Enhancement</h3>
+      <p>To improve functionality and interactivity, I will be extending the class-schedule.html page to include:</p>
       <ul>
-        <li>Improve member engagement by providing valuable resources and networking opportunities.</li>
-        <li>Attract new businesses and encourage economic development in the community.</li>
-        <li>Improve the visibility and reputation of the chamber as a trusted authority in local business matters.</li>
+        <li>✅ Add/Drop Course Feature:
+          Students will be able to add new courses from a selection list or remove previously added courses from their schedule. This will simulate a basic course registration system.</li>
+          <li>✅ Local Storage Integration:
+            Selected courses will be stored in the browser’s localStorage to maintain user choices across sessions.</li>
+          <li>✅ User Feedback:
+            Buttons will update in real-time (e.g., "Add" → "Added", disabled after click) to improve UX.</li>
       </ul>
-      <h2>User Personas</h2>
+      <p>The site will be fully responsive, accessible, and structured using semantic HTML, CSS, and JavaScript. I plan to implement features such as:</p>
       <ul>
-        <li>Small Business Owner: Maria is a 35-year-old entrepreneur who owns a small boutique shop in town. She is
-          looking for networking opportunities, business resources, and marketing support to help grow her business.
+        <li>A dynamic homepage layout inspired by BYUI's portal design.</li>
+        <li>A course documentation area with interactive modals.
         </li>
-        <li>Corporate Executive: Diego is a 47-year-old executive at a large company looking for growth opportunities.
-          His company is interested in partnership opportunities, economic development resources, and networking with
-          other business leaders in the area</li>
-        <li>The New Resident: Francisco recently moved into the community and is looking to learn more about services
-          available in the area. He is interested in finding business directories, event calendars, and community
-          service opportunities.</li>
+        <li>JavaScript functionality for fetching and displaying course data from a JSON file.</li>
+        <li>Modern front-end practices like modular JavaScript, local storage, and DOM manipulation.</li>
+      </ul>
+      <p>This project not only demonstrates my web development skills but also serves as a personal academic organizer.</p>
+      <h2>Target Market</h2>
+      <p>The primary target audience for this project includes:</p>
+      <ul>
+        <li><span class="target-font">Students </span> – especially BYU-Idaho students or students from other institutions who want a personalized way to track and manage their coursework. The familiar layout helps with usability and quick navigation.</li>
+        <li><span class="target-font">Aspiring Web Developers </span> – learners who are looking for example projects that blend real-world UI inspiration with custom functionality using HTML, CSS, and JavaScript.</li>
+        <li><span class="target-font"> Educators & Instructors </span> – instructors seeking student portfolio examples or inspiration for teaching responsive web design, JavaScript modals, and JSON-based data handling.</li>
+        <li><span class="target-font"> Potential Employers or Internship Recruiters – as part of a personal portfolio, this project showcases your ability to replicate a real-world interface, integrate dynamic content, and follow modern web development best practices.</li>
       </ul>
       <h2>SEO Plan</h2>
       <ul>
         <li>Use relevant keywords in site descriptions, content, and blog posts.</li>
         <li>Verify the site on Google's Business Profile.</li>
         <li>Get inbound links or backlinks from all member business to improve rankings.</li>
-        <li>Embed Google Analytics in all site pages.</li>
+        <li>Embed Meta og in all site pages.</li>
       </ul>
     </section>
     <section id="design">
@@ -95,8 +102,8 @@
         <img src="images/wireframe.png" alt="">
         <figcaption>Larger Screen</figcaption>
       </figure>
-      <figure>
-        <img src="images/wireframe2.png" alt="">
+      <figure class="small">
+        <img src="images/wireframe-small.png" alt="">
         <figcaption>Smaller Screen</figcaption>
       </figure>
 

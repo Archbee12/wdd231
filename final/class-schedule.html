@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BYU Portal Clone Page</title>
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/certificate.css">
+  <link rel="stylesheet" href="styles/class-schedule.css">
+  <!-- <script defer src="scripts/script.js"></script> -->
+  <script defer src="scripts/navigation.js"></script>
+  <script defer src="scripts/holds.mjs" type="module"></script>
+  <script type="module" src="scripts/class-schedule.js"></script>
+  <script type="module" src="course-selection.js"></script>
+  <script defer src="scripts/path.js"></script>
+</head>
+
+<body>
+  <div class="container">
+      <div class="lef">
+          <p>Hello Deborah Sarah</p>
+      </div>
+      <div><button>Logout</button></div>
+  </div>
+  <header class="card">
+    <div class="logo">
+      <div>
+          <a href="index.html">
+              <img src="images/logo.png" G alt="">
+          </a>
+      </div>
+
+      <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+      </div>
+    </div>
+    <div class="icons-sm">
+      <div id="current-date">
+      </div>
+      <div class="icons">
+        <div class="icons-container">
+          <img src="/icons/error.svg" alt="">
+          <div class="icons-count">0</div>
+          <div class="tooltip">Hold</div>
+
+          <div class="custom-dialog" id="holds-dialog"></div>
+
+        </div>
+        <div class="icons-container">
+          <img src="/icons/notifications.svg" alt="">
+          <div class="icons-count">0</div>
+          <div class="tooltip">Alert</div>
+
+          <div class="custom-dialog" id="holds-dialog"></div>
+        </div>
+      </div>
+    </div>
+    <nav class="nested-links">
+      <div id="academics" class="menu-item">
+        <div class="menu-title">Academics</div>
+        <div class="menu-dropdown">
+          <a href="program.html">My Program</a>
+          <a href="certificate.html">Certificates and Degrees</a>
+          <!-- <a href="#">Degree Progress Audit</a> -->
+          <a href="class-schedule.html" class="active">Class Schedule</a>
+          <!-- <a href="#">Gatherings</a> -->
+          <!-- <a href="#">Go to Class</a> -->
+          <!-- <a href="#">Go to EnglishConnect</a> -->
+        </div>
+      </div>
+
+      <!-- <div id="profile" class="menu-item">
+        <div class="menu-title">My Profile</div>
+        <div class="menu-dropdown">
+          <a href="#">Message Center</a>
+          <a href="#">My Information</a>
+          <a href="#">Privacy Settings</a>
+          <a href="#">Username & Emails</a>
+        </div>
+      </div>
+      <div id="finances" class="menu-item">
+        <div class="menu-title">Finances</div>
+        <div class="menu-dropdown">
+          <a href="#">Account Information</a>
+          <a href="#">Tuition Discount</a>
+          <a href="#">Pay Tuition</a>
+        </div>
+      </div>
+      <div id="document" class="menu-item">
+        <div class="menu-title">Documents</div>
+        <div class="menu-dropdown">
+          <a href="#">Credit Transfer</a>
+          <a href="#">Document Center</a>
+          <a href="#">Transcripts</a>
+        </div>
+      </div>
+      <div id="resources" class="menu-item">
+        <div class="menu-title">Resources</div>
+        <div class="menu-dropdown">
+          <a href="#">Account Information</a>
+          <a href="#">Tuition Discount</a>
+          <a href="#">Pay Tuition</a>
+        </div>
+      </div>
+      <div id="support" class="menu-item">
+        <div class="menu-title">Support</div>
+        <div class="menu-dropdown">
+          <a href="#">Student Software</a>
+          <a href="#">Careers</a>
+          <a href="#">Academic Tools</a>
+        </div>
+      </div> -->
+    </nav>
+  </header>
+
+  <main>
+    <div class="card-grid">
+      <div class="card">
+        <div class="content">
+          <h1>Class Schedule</h1>
+          <h2>Manage Your Classes</h2>
+          <h5>Projected Graduation Term: 2027 Term 3</h5>
+
+          <p class="registration"><span class="i"> ℹ </span> Registration is Open - Closes on Apr 28 2025</p>
+
+          <div class="class-container">
+            <div class="class-term class-card" >
+              <div class="prev">< Previous Term</div>
+              <div class="date"><span>2025 Term 3</span> May 5 - Jun 21 </div>
+              <div class="next"> Next Term ></div>
+            </div>
+            <div class="button-card class-card" >
+              <div class="button"><button>Add</button></div>
+              <div class="button"><button>Drop</button></div>
+            </div>
+            <!-- <div class="classes class-card">
+              <div class="course-title">WDD231 - Web Frontend Development I</div>
+              <span class="status">
+                <span class="status-icon">+</span>
+                Registered
+              </span>
+              <div class="course-credits">2 Credit(s)</div>
+            </div>
+            <div class="classes class-card">
+              <div class="course-title">REL250A - Jesus Christ and His Everlasting Gospel A</div>
+              <span class="status">
+                <span class="status-icon">+</span>
+                Registered
+              </span>
+              <div class="course-credits">2 Credit(s)</div>
+            </div>
+            <div class="classes class-card">
+              <div class="course-title">WRIT101 - Writing in Professional Contexts</div>
+              <span class="status">
+                <span class="status-icon">+</span>
+                Registered
+              </span>
+              <div class="course-credits">2 Credit(s)</div>
+            </div> -->
+            <div id="courses-details"></div>
+              <dialog id="courseModal" class="course-modal"></dialog>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer>
+      <div id="footer">
+          <div> 
+              <p>Version: 25.1.2.2</p>
+          </div>
+          <div class="footer-nav">
+              <p><a href="index.html">Home</a></p>
+              <p>|</p> 
+              <p><a href="#">Logout</a></p>
+              <p>| |</p>  
+              <p><a href="#">Site Index</a></p>
+          </div>
+      </div>
+
+  </footer>
+</body>
+
+</html>

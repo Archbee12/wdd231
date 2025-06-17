@@ -1,0 +1,33 @@
+.courses-container {
+  display: block;
+  /* padding: 1rem !important; */
+  /* margin: .5rem; */
+}
+
+.course-option {
+  display: block;
+  padding: 1rem;
+  border: 1px solid #ccc;
+}
+
+#saveCoursesBtn {
+  padding: 1rem;
+  margin: .5rem;
+  display: block;
+
+}
+
+.button-card {
+  background-color: white;
+  color: black;
+}
+
+.add-btn {
+  cursor: pointer;
+}
+
+/* button:disabled {
+  cursor: default;
+
+} */
+

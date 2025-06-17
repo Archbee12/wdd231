@@ -1,0 +1,98 @@
+.registration {
+  background-color: rgb(17, 84, 138);
+  color: aliceblue;
+  padding: .5rem;
+}
+
+.class-container {
+  border: 1px solid black;
+}
+
+.class-card {
+  padding: 20px;
+  border: 1px solid black;
+}
+
+.class-term {
+  display: flex;
+  gap: 25px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.i {
+  border-radius: 10px;
+  border: 1px solid gray;
+  padding: 4px 8px;
+}
+
+.class-term div:nth-child(2) {
+  font-size: 1.2rem;
+}
+
+span {
+  font-weight: 700;
+}
+
+.course-title {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.course-credits {
+  font-size: 14px;
+  color: #555;
+}
+
+.status {
+  float: inline-end;
+  font-size: 14px;
+  color: green;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.status-icon {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: green;
+  color: white;
+  font-size: 12px;
+}
+
+.button button {
+  padding: .5rem 1rem;
+  background-color: white;
+  cursor: pointer;
+  margin: .25rem;
+}
+
+
+
+@media (max-width:840px) {
+  .class-term {
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    flex-wrap: wrap; 
+    gap: 10px;
+  }
+
+  .class-term div:nth-child(2) {
+    flex: 1 1 100%; 
+    text-align: center;
+    order: 1; 
+  }
+
+  .prev, .next {
+    flex: 0 1 auto;
+    white-space: nowrap; /* Prevents wrapping */
+  }
+}

@@ -1,0 +1,59 @@
+.card-grid {
+  display: block;
+  max-width: 1600px;
+}
+
+.content {
+  padding: 30px 40px;
+}
+
+.content:nth-child(2) {
+  margin: 0 40px;
+}
+
+.content:nth-child(2) h1 {
+  font-weight: 100;
+}
+
+label {
+  display: block;
+  margin: 20px auto;
+  font-size: 20px;
+}
+
+select {
+  min-width: 350px;
+  width: fit-content;
+  height: 2rem;
+  border-radius: 0;
+  /* margin: 20px auto; */
+}
+
+option {
+  /* display: inline-block; */
+  border-radius: 0;
+  background-color: rgba(206, 206, 206, 0.646);
+}
+
+.col {
+  margin: 30px auto;
+}
+
+span {
+  font-weight: 700;
+}
+
+.right {
+  float: right;
+  display: flex;
+  align-items: center;
+}
+
+/* .right:nth-child(2) {
+  display: block;
+} */
+
+.p-left, .p-right {
+  margin-bottom: 25px;
+}
+
