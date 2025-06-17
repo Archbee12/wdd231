@@ -3,6 +3,7 @@
     "imageUrl": "../images/canopy.webp",
     "name": "Lekki Conservation Centre",
     "location": "Lekki 106104, Lagos", 
+    "preview": "A nature reserve with the longest canopy walkway in Africa and rich biodiversity.",
     "description": "A nature reserve with the longest canopy walkway in Africa and rich biodiversity. Its huge tract of wetlands is set aside for wildlife viewing. Raised walkways enable the viewing of animals like monkeys, crocodiles, snakes, and various birds. There is also a conservation center and a library."
   },
 
@@ -10,41 +11,48 @@
     "imageUrl": "../images/afac.webp",
     "name": "Annang Festival",
     "location": "Ikot Ekpene, Akwa-Ibom",
+    "preview": "AFAC is more than just a festival; it’s a celebration of the rich cultural heritage of the Annang people.",
     "description": "AFAC is more than just a festival; it’s a celebration of the rich cultural heritage of the Annang people. The festival features a variety of cultural displays, including masquerade performances, warrior parades, drum ensembles, and art exhibitions. "
   },
   {
     "imageUrl": "../images/zuma.webp",
     "name": "Zuma Rock",
     "location": "Madalla, Niger State",
+    "preview": "A giant monolith considered the 'Gateway to Abuja', famous for its human-like facial features.",
     "description": "A giant monolith considered the 'Gateway to Abuja', famous for its human-like facial features. and its towering height of 725 meters above sea level. Often called the 'Gateway to Abuja,' Zuma Rock holds cultural and historical significance for the local Gwari people and is a popular tourist attraction and iconic symbol of Nigeria. "
   },
   {
     "imageUrl": "../images/olumo.webp",
     "name": "Olumo Rock",
     "location": "Abeokuta, Ogun State",
+    "preview": "A historic rock used as a fortress during inter-tribal wars, offering panoramic views of Abeokuta.",
     "description": "A historic rock used as a fortress during inter-tribal wars, offering panoramic views of Abeokuta. Olumo Rock is a prominent granite rock formation in Abeokuta, Ogun State, Nigeria, known for its historical significance and spiritual importance. "
   },
   {
     "imageUrl": "../images/yankari.webp",
     "name": "Yankari National Park",
     "location": "Bauchi State",
+    "preview": "Nigeria's largest wildlife park, home to elephants, baboons, and warm spring pools.",
     "description": "Nigeria's largest wildlife park, home to elephants, baboons, and warm spring pools. It was established as a game reserve in 1956 and became a national park in 1991. It covers 870 square miles (2,254 square km). The park, at an elevation of about 1,600 feet (500 meters), has characteristic savanna vegetation, including swamps in river floodplains, grasslands, and thick bush."
   },
   {
     "imageUrl": "../images/nike.webp",
     "name": "Nike Art Gallery",
     "location": "Lekki, Lagos State",
+    "preview": "One of the largest art galleries in West Africa showcasing Nigerian art and culture.",
     "description": "One of the largest art galleries in West Africa showcasing Nigerian art and culture. It boasts a collection of about 8,000 diverse artworks from various Nigerian artists like Chief Josephine Oboh Macleod."
   },
   {
     "imageUrl": "../images/idanre.webp",
     "name": "Idanre Hills",
     "location": "Idanre, Ondo State",
+    "preview": "Ancient hills with historical significance and breathtaking scenery.",
     "description": "Ancient hills with historical significance and breathtaking scenery. The Idanre Hill is well known for its scenic landscape. Idanre hill consists of high plain with spectacular valleys interspersed with inselbergs of about 3,000 ft above sea level."
   },
   {
     "name": "Obudu Mountain Resort",
     "location": "Cross River State",
+    "preview": "A highland resort known for its cool climate, cable cars, and lush landscape.",
     "description": "A highland resort known for its cool climate, cable cars, and lush landscape. Obudu Mountain Resort, also known as Obudu Cattle Ranch, is a popular tourist destination in Nigeria, located in the highlands of Cross River State. It's known for its scenic views, temperate climate, and various tourist facilities, including a cable car and a water park.",
     "imageUrl": "obudu.jpeg"
   },
@@ -52,12 +60,14 @@
     "imageUrl": "../images/awhum.webp",
     "name": "Awhum Waterfall and Cave",
     "location": "Enugu State",
+    "preview": "A spiritual and tourist site with a beautiful waterfall cascading over a cave.",
     "description": "A spiritual and tourist site with a beautiful waterfall cascading over a cave. The waterfall, which is believed to have healing powers and the ability to ward off evil spirits, cascades down from a height of about 30 meters (98 feet). "
   },
   {
     "imageUrl": "../images/tarkwa.webp",
     "name": "Tarkwa Bay",
     "location": "Lagos State",
+    "preview": "A sheltered beach accessible by boat, ideal for surfing.",
     "description": "A sheltered beach accessible by boat, ideal for surfing, swimming, and picnics and known for its calm waters, clean sandy beaches, and relaxing atmosphere, making it a popular destination for both locals and tourists seeking a getaway from city life. "
   }
 ]

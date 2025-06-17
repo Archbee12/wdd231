@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Religion",
+    "code": "REL250A",
+    "subject": "Jesus Christ and His Evelasting Gospel A",
+    "description": "An in-depth study of the life and teachings of Jesus Christ using scripture, modern revelation, and historical context.",
+    "credits": "1"
+  },
+  {
+    "title": "Applied Associate Generals & Religion (BYU-Idaho) v2024",
+    "code": "WRIT101",
+    "subject": "Writing in Professional Contexts",
+    "description": "A foundational course exploring discipleship and gospel-centered academic development.",
+    "credits": "3"
+  },
+  {
+    "title": "Web & Computer Programming v2021SP",
+    "code": "WDD231",
+    "subject": "Web Frontend Development I",
+    "description": "Introduction to web fundamentals including HTML, CSS, JavaScript, and client-side logic.",
+    "credits": "2"
+  },
+  {
+    "title": "Web & Computer Programming v2021SP",
+    "code": "WDD231",
+    "subject": "Web Frontend Development I",
+    "description": "Introduction to web fundamentals including HTML, CSS, JavaScript, and client-side logic.",
+    "credits": "2"
+  },
+  {
+    "title": "Web & Computer Programming v2021SP",
+    "code": "WDD231",
+    "subject": "Web Frontend Development I",
+    "description": "Introduction to web fundamentals including HTML, CSS, JavaScript, and client-side logic.",
+    "credits": "2"
+  }
+]

@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Holds",
+    "body": "You currently have no holds on record.",
+    "link": "View all holds"
+  },
+  {
+    "title": "Alerts",
+    "body": "You have no new alerts.",
+    "link": "View all alerts"
+  }
+]

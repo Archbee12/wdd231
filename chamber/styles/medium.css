@@ -3,12 +3,12 @@
     grid-template-areas: 
     "image name"
     "image description"
-    "image address";
+    "image address"
+    "learn learn"
   }
 
   #cards div img {
     width: 300px;
-    height: 200px;
     object-fit: cover;
     transition: filter 0.3s ease; /* Smooth transition */
     filter: brightness(70%);
@@ -26,5 +26,13 @@
   #cards div p {
     margin: .25rem 1rem;
   }
+
+  #cards div .learn-more-btn {
+    padding: .75rem;
+    margin: 1.5rem;
+    border-radius: 15px;
+  }
+
+
 
 }

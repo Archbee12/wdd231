@@ -16,7 +16,7 @@
       <div class="lef">
           <p>Hello Deborah Sarah</p>
       </div>
-      <div><button>Logout</button></div>
+      <div><button><a href="logoutBtn"> Logout</a> </button></div>
   </div>
   <header class="card">
     <div class="logo">
@@ -37,14 +37,14 @@
         </div>
         <div class="icons">
           <div class="icons-container">
-            <img src="/icons/error.svg" alt="">
+            <img src="./icons/error.svg" alt="">
             <div class="icons-count">0</div>
             <div class="tooltip">Hold</div>
 
             <div class="custom-dialog" id="holds-dialog"></div>
           </div>
           <div class="icons-container">
-            <img src="/icons/notifications.svg" alt="">
+            <img src="./icons/notifications.svg" alt="">
             <div class="icons-count">0</div>
             <div class="tooltip">Alert</div>
 
@@ -57,7 +57,7 @@
           <div class="menu-title">Academics</div>
           <div class="menu-dropdown">
             <a href="program.html">My Program</a>
-            <a href="certificate.html">Certificates and Degrees</a>
+            <a href="certificate.html" class="active">Certificates and Degrees</a>
             <!-- <a href="#">Degree Progress Audit</a> -->
             <a href="class-schedule.html">Class Schedule</a>
             <!-- <a href="#">Gatherings</a>
@@ -66,24 +66,24 @@
           </div>
         </div>
 
-        <!-- <div id="profile" class="menu-item">
+        <div id="profile" class="menu-item">
           <div class="menu-title">My Profile</div>
           <div class="menu-dropdown">
-            <a href="#">Message Center</a>
-            <a href="#">My Information</a>
-            <a href="#">Privacy Settings</a>
-            <a href="#">Username & Emails</a>
+            <!-- <a href="#">Message Center</a> -->
+            <a href="my-information.html">My Information</a>
+            <!-- <a href="#">Privacy Settings</a>
+            <a href="#">Username & Emails</a> -->
           </div>
         </div>
-        <div id="finances" class="menu-item">
+        <!-- <div id="finances" class="menu-item">
           <div class="menu-title">Finances</div>
           <div class="menu-dropdown">
             <a href="#">Account Information</a>
             <a href="#">Tuition Discount</a>
             <a href="#">Pay Tuition</a>
           </div>
-        </div>
-        <div class="menu-title">Documents</div>
+        </div> -->
+        <!-- <div class="menu-title">Documents</div>
         <div class="menu-title">Resources</div>
         <div class="menu-title">Support</div> -->
       </nav>
@@ -128,16 +128,23 @@
     <footer>
       <hr>
         <div id="footer">
-            <div> 
-                <p>Version: 25.1.2.2</p>
-            </div>
-            <div class="footer-nav">
-                <p><a href="index.html">Home</a></p>
-                <p>|</p> 
-                <p><a href="#">Logout</a></p>
-                <p>| |</p>  
-                <p><a href="#">Site Index</a></p>
-            </div>
+          <div class="footer-left"> 
+            <p>WDD231 Class Project</p>
+            <p>Deborah Sarah Okon<br>
+            <p>&copy;<span id="currentYear"> </span> Obasarpen Chamber of Commerce</p>
+            <p id="lastModified"> </p>
+          </div>
+          <div class="footer-nav">
+            <p><a href="index.html">Home</a></p>
+            <p>| </p> 
+            <p><a href="#">Logout</a></p>
+            <p>| |</p>  
+            <p><a href="siteplan.html">Site Plan</a></p>
+          </div>
+            
+        </div>
+        <div>
+            <a href="https://wa.link/79triw" target="_blank"><img src="../chamber/images/youtube-icon.png"alt="Youtube-icon"></a>
         </div>
 
     </footer>

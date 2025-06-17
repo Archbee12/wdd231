@@ -10,6 +10,7 @@
     <script defer src="scripts/script.js" type="module"></script>
     <script defer src="scripts/navigation.js"></script>
     <script defer src="scripts/holds.mjs" type="module"></script>
+    <script defer src="scripts/my-information.js"></script>
     <script defer src=".././chamber/scripts/getdates.js" type="module"></script>
 </head>
 
@@ -63,9 +64,9 @@
                     <a href="certificate.html">Certificates and Degrees</a>
                     <a href="#">Degree Progress Audit</a>
                     <a href="class-schedule.html">Class Schedule</a>
-                    <!-- <a href="#">Gatherings</a>
+                    <a href="#">Gatherings</a>
                     <a href="#">Go to Class</a>
-                    <a href="#">Go to EnglishConnect</a> -->
+                    <a href="#">Go to EnglishConnect</a>
                 </div>
             </div>
 
@@ -116,58 +117,12 @@
         </nav>
     </header>
 
-    <main>
+    <main class="thankyou">
         <div class="card-grid">
             <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Programs of Study</h2>
-                    <div class="card-info">
-                        <p>You currently have 8 active enrollments. You can view all of your enrollments on the
-                            <a href="#">Degree Progress Audit</a>
-                        </p>
-                    </div>
-                    <div>
-                        <p>Religion <br> GPA: 0.00</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Financials</h2>
-                    <p>Current Balance: <strong>$208.75</strong></p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Holds & Alerts</h2>
-                    <p>You have 0 holds.<br> You have 1 alert.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Document Center</h2>
-                    <p>No documents due.</p>
-                </div>
-            </div>
-
-            <div class="card">
-                <div class="card-body">
-                    <h2 class="card-title">Classes</h2>
-                    <div class="terms">
-                        <div><p class="term">25T3</p></div>
-                        <div class="tooltip">2025 Term 3</div>
-                    </div>
-
-                    <div id="courses-details"></div>
-                    <dialog id="courseModal" class="course-modal"></dialog>
-                </div>
+              <div id="results"></div>
             </div>
         </div>
-
-        
     </main>
     <footer>
       <hr>

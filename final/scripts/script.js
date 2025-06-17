@@ -51,3 +51,11 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 });
+
+document.querySelector('#results').innerHTML = `
+    <h2>Thank You for Visiting!</h2>
+    <p>We appreciate you taking the time to explore our website.</p>
+    <p>Your visit means a lot to us, and we hope to see you again soon.</p>
+    <p><strong>Visit Date:</strong> ${date.toLocaleDateString(undefined, { year: 'numeric', month: 'long', day: 'numeric' })}</p>
+    <a href="index.html">Return to Home</a>
+`;

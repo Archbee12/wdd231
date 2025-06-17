@@ -1,3 +1,4 @@
+
 const url = 'data/interest.json';
 
 async function fetchInterests() {
@@ -24,14 +25,59 @@ function displayInterest(interests) {
       <img src="images/${interest.imageUrl}" alt="${interest.name}" loading="lazy">
     
       <h2>${interest.name}</h2>
-      <p class="description">${interest.description}</p>
+      <p class="description">${interest.preview}</p>
       <p class="address">${interest.location}</p>
+      <button class="learn-more-btn" data-id="${interest.name}">Learn More</button>
     `;
 
     interestContainer.appendChild(interestElement);
   });
+
+  document.querySelectorAll('.learn-more-btn').forEach(button => {
+    button.addEventListener('click', (event) => {
+        const selectedInterest = interests.find(interest => interest.name === event.target.dataset.id);
+        showModal(selectedInterest);
+    });
+  });
+}
+
+function showModal(interest) {
+    // Remove existing modal if present
+    const existingModal = document.getElementById('interestModal');
+    if (existingModal) {
+        existingModal.remove();
+    }
+
+    // Create dialog element
+    const modal = document.createElement('dialog');
+    modal.id = 'interestModal';
+
+    // Create modal content
+    modal.innerHTML = `
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-title">${interest.name}</h2>
+                <button id="closeModal">❌</button>
+            </div>
+            <p id="modal-description">${interest.description}</p>
+            <p id="modal-location">📍 Location: ${interest.location}</p>
+        </div>
+    `;
+
+    // Append modal to body
+    document.body.appendChild(modal);
+
+    // Show the modal
+    modal.showModal();
+
+    // Close button functionality
+    document.getElementById('closeModal').addEventListener('click', () => {
+        modal.close();
+        modal.remove(); // Remove modal after closing
+    });
 }
 fetchInterests();
+
 
 
 
