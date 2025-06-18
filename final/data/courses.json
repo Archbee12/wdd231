@@ -1,9 +1,34 @@
 [
   {
+    "title": "Object-Oriented Programming",
+    "code": "CSE 210",
+    "subject": "CSE",
+    "description": "Introduction to object-oriented software development using classes and objects. Covers abstraction, encapsulation, inheritance, and polymorphism.",
+    "prerequisites": "CSE 110",
+    "credits": 3
+  },
+  {
+    "title": "Dynamic Web Fundamentals",
+    "code": "WDD 131",
+    "subject": "Web Design & Development",
+    "description": "Covers core JavaScript and DOM manipulation for creating dynamic user interactions on websites.",
+    "prerequisites": "WDD 130",
+    "credits": 2
+  },
+  {
+    "title": "Data Structures and Algorithms",
+    "code": "CSE 212",
+    "subject": "CSE",
+    "description": "Covers abstract data types, recursive algorithms, and fundamental data structures such as stacks, queues, linked lists, trees, and graphs.",
+    "prerequisites": "CSE 210",
+    "credits": 3
+  },
+  {
     "title": "Religion",
     "code": "REL250A",
     "subject": "Jesus Christ and His Evelasting Gospel A",
-    "description": "An in-depth study of the life and teachings of Jesus Christ using scripture, modern revelation, and historical context.",
+    "description": "This course focuses on Jesus Christ's eternal ministry, divine role, and teachings throughout His premortal, mortal, and postmortal life. The course emphasizes the Savior’s central role in Heavenly Father’s plan for His children. You are invited to deepen your love for and testimony of Jesus Christ and to become a more devoted disciple. This course is taught using blocks of scripture from the standard works in context (the Bible, Book of Mormon, Doctrine and Covenants, and the Pearl of Great Price) as well as the teachings of modern prophets. There is no textbook for this course.",
+    "prerequisites": "There are no prerequisites",
     "credits": "1"
   },
   {
@@ -11,27 +36,87 @@
     "code": "WRIT101",
     "subject": "Writing in Professional Contexts",
     "description": "A foundational course exploring discipleship and gospel-centered academic development.",
+    "prerequisites": "There are no prerequisites",
     "credits": "3"
   },
   {
     "title": "Web & Computer Programming v2021SP",
     "code": "WDD231",
     "subject": "Web Frontend Development I",
-    "description": "Introduction to web fundamentals including HTML, CSS, JavaScript, and client-side logic.",
+    "description": "This course builds on prior experience with Dynamic Web Fundamentals and programming. Students will focus on user experience, accessibility, compliance, performance optimization, and basic API usage.",
+    "prerequisites": "Take the following: WDD131 - Dynamic Web Fundamentals (2) CSE111 - Programming with Functions (2)",
     "credits": "2"
   },
   {
-    "title": "Web & Computer Programming v2021SP",
-    "code": "WDD231",
-    "subject": "Web Frontend Development I",
-    "description": "Introduction to web fundamentals including HTML, CSS, JavaScript, and client-side logic.",
+    "title": "Applied Associate Generals",
+    "code": "Math108X",
+    "subject": "Math for the Real World",
+    "description": "MATH 108X introduces the quantitative reasoning process. This process teaches you to use algebraic, computational, statistical, and graphical tools to make informed decisions about financial, family, social, and community issues. MATH 108X will satisfy the BYU-Idaho Foundations quantitative reasoning requirement, but it does not serve as a prerequisite for college algebra, trigonometry, or calculus-based courses.",
+    "prerequisites": "There are no prerequisites",
     "credits": "2"
   },
   {
-    "title": "Web & Computer Programming v2021SP",
-    "code": "WDD231",
-    "subject": "Web Frontend Development I",
-    "description": "Introduction to web fundamentals including HTML, CSS, JavaScript, and client-side logic.",
+    "title": "Applied Associate Generals & Religion (BYU-Idaho) v2024",
+    "code": "BUS301",
+    "subject": "Advanced Writing in Professional Context",
+    "description": "Advanced Writing in Professional Contexts introduces you to the fundamentals of rhetorical principles and writing practices using a number of typical business situations. During the course, you will produce effective business letters, reports, and employment packages. This will prepare you for the demands of careers that require significant time reading, drafting, and revising written communication.",
+    "prerequisites": "There are no prerequisites",
     "credits": "2"
+  },
+  {
+    "title": "Web Frontend Development II",
+    "code": "WDD330",
+    "subject": "Web Frontend Development II",
+    "description": "This course is designed to give students the skills required to create web applications using HTML, CSS , and JavaScript. It is intended to help the student learn to do this without the aid of third-party frameworks or libraries. Because of this, the course focuses on how to solve larger, ill-structured business problems by designing and creating web applications.",
+    "prerequisites": "WDD 230 - It is expected that you have learned and mastered the information made available to you in WDD 230 and its prerequisite courses. If you feel rusty, the following is a more specific list of topics you would have been introduced to in those courses that will be important that you are comfortable with, and some sources to use for review before the course begins.",
+    "credits": "3"
+  },
+  {
+    "title": "Web Backend Development",
+    "code": "CSE340",
+    "subject": "Web Backend Development",
+    "description": "This class will focus on designing software systems at the largest possible level. An emphasis will be placed on problem solving, analysis skills, and interpersonal social skills.",
+    "prerequisites": "CSE 210",
+    "credits": "3"
+  },
+  {
+    "title": "Introduction to Databases",
+    "code": "ITM111",
+    "subject": "Introduction to Databases",
+    "description": "This course teaches the basic elements of database management systems. It introduces students to the concepts of logical and physical relationships in a data model and the concept of inner join. Students will use a computer aided software engineering (CASE) tool to design, create and query a database.",
+    "prerequisites": "There are no pre-requisites for this course",
+    "credits": 3
+  },
+  {
+    "title": "Web Engineering",
+    "code": "CSE341",
+    "subject": "Web Services",
+    "description": "Full-stack web development including server-side technologies, RESTful APIs, authentication, and deployment.",
+    "prerequisites": "CSE 210, CSE 340",
+    "credits": 3
+  },
+  {
+    "title": "Operating Systems",
+    "code": "CSE 320",
+    "subject": "CSE",
+    "description": "Introduction to operating system principles including process management, memory management, and file systems.",
+    "prerequisites": "CSE 212",
+    "credits": 3
+  },
+  {
+    "title": "Web Development",
+    "code": "WDD 430",
+    "subject": "Web Full-Stack Development",
+    "description": "Culminating project demonstrating frontend and backend skills through a comprehensive web application.",
+    "prerequisites": "WDD 330, WDD 331",
+    "credits": 3
+  },
+  {
+    "title": "Internship",
+    "code": "WDD 498R",
+    "subject": "Web Design & Development",
+    "description": "Professional internship experience in the web development industry.",
+    "prerequisites": "Instructor approval",
+    "credits": 1
   }
 ]

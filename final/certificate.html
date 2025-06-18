@@ -5,10 +5,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BYU Portal Clone Page</title>
+    <meta name="description"
+    content="BYU-Idaho Cloned Student Portal is a responsive, student-friendly web application inspired by the official BYU-I portal. Built using HTML, CSS, and JavaScript, it features dynamic content, course modals powered by JSON, and an intuitive layout for easy navigation. Perfect for students, educators, and aspiring developers, this project showcases real-world web design, form handling, and data-driven interactivity."/>
+    <meta name="author" content="Deborah Sarah Okon">
+    <meta property="og:title" content="BYUI Cloned Portal">
+    <meta property="og:description" content="BYU-Idaho Cloned Student Portal is a responsive, student-friendly web application inspired by the official BYU-I portal. Built using HTML, CSS, and JavaScript, it features dynamic content, course modals powered by JSON, and an intuitive layout for easy navigation. Perfect for students, educators, and aspiring developers, this project showcases real-world web design, form handling, and data-driven interactivity.">
+    <meta property="og:image" content="https://archbee12.github.io/wdd231/final/images/logo.png">
+    <meta property="og:url" content="https://archbee12.github.io/wdd231/final/index.html">
+    <link rel="icon" href="favicon/favicon.ico"  class="favicon">
+    <link rel="stylesheet" href="../wdd231/styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/certificate.css">
     <script defer src="scripts/script.js"></script><script defer src="scripts/navigation.js"></script>
-    <script defer src="scripts/holds.mjs" type="module"></script>
+    <script src="scripts/holds.mjs" type="module"></script>
+    <script src=".././chamber/scripts/getdates.js" type="module"></script>
 </head>
 
 <body>
@@ -16,13 +26,13 @@
       <div class="lef">
           <p>Hello Deborah Sarah</p>
       </div>
-      <div><button><a href="logoutBtn"> Logout</a> </button></div>
+      <div><button> Logout </button></div>
   </div>
   <header class="card">
     <div class="logo">
       <div>
           <a href="index.html">
-              <img src="images/logo.png" G alt="">
+              <img src="images/logo.png" alt="">
           </a>
       </div>
 
@@ -41,14 +51,14 @@
             <div class="icons-count">0</div>
             <div class="tooltip">Hold</div>
 
-            <div class="custom-dialog" id="holds-dialog"></div>
+            <div class="custom-dialog"></div>
           </div>
           <div class="icons-container">
             <img src="./icons/notifications.svg" alt="">
             <div class="icons-count">0</div>
             <div class="tooltip">Alert</div>
 
-            <div class="custom-dialog" id="holds-dialog"></div>
+            <div class="custom-dialog"></div>
           </div>
         </div>
       </div>
@@ -143,8 +153,10 @@
           </div>
             
         </div>
-        <div>
-            <a href="https://wa.link/79triw" target="_blank"><img src="../chamber/images/youtube-icon.png"alt="Youtube-icon"></a>
+        <div class="middle">
+          <a href="https://wa.link/79triw" target="_blank"><img src="icons/whatsapp-icon.svg" alt="Youtube-icon"></a>
+          <a href="https://github.com/Archbee12" target="_blank"><img src="icons/github-icon.svg" alt="twitter-icon"></a>
+          <a href="https://www.linkedin.com/in/deborah-okon-7415b5241/" target="_blank"><img src="icons/linkedin-icon.svg" alt="linkedin-icon"></a>
         </div>
 
     </footer>

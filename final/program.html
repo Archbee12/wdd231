@@ -5,12 +5,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>BYU Portal Clone Page</title>
+    <meta name="description"
+    content="View the current program."/>
+    <meta name="author" content="Deborah Sarah Okon">
+    <meta property="og:title" content="BYUI Cloned Portal">
+    <meta property="og:description" content="View the current program">
+    <meta property="og:image" content="https://archbee12.github.io/wdd231/final/images/logo.png">
+    <meta property="og:url" content="https://archbee12.github.io/wdd231/final/program.html">
+    <link rel="icon" href="favicon/favicon.ico"  class="favicon">
+    <link rel="stylesheet" href="../wdd231/styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
     <link rel="stylesheet" href="styles/certificate.css">
     <link rel="stylesheet" href="styles/program.css">
     <script defer src="scripts/script.js"></script>
     <script defer src="scripts/navigation.js"></script>
-    <script defer src="scripts/holds.mjs" type="module"></script>
+    <script src="scripts/holds.mjs" type="module"></script>
+    <script src=".././chamber/scripts/getdates.js" type="module"></script>
 </head>
 
 <body>
@@ -24,7 +34,7 @@
     <div class="logo">
       <div>
           <a href="index.html">
-              <img src="images/logo.png" G alt="">
+              <img src="images/logo.png" alt="">
           </a>
       </div>
 
@@ -43,7 +53,7 @@
             <div class="icons-count">0</div>
             <div class="tooltip">Hold</div>
 
-            <div class="custom-dialog" id="holds-dialog"></div>
+            <div class="custom-dialog"></div>
 
           </div>
           <div class="icons-container">
@@ -51,7 +61,7 @@
             <div class="icons-count">0</div>
             <div class="tooltip">Alert</div>
 
-            <div class="custom-dialog" id="holds-dialog"></div>
+            <div class="custom-dialog"></div>
           </div>
         </div>
       </div>
@@ -110,7 +120,7 @@
 
             <div class="col">
               <div class="p-left">
-                <p class="right">Status: <span>Enrolled</span></p>
+                <p class="right">Status: <span> Enrolled</span></p>
                 <p class="left">Certificates & Degrees</p>
               </div>
               <div class="p-right">
@@ -168,14 +178,16 @@
             <div class="footer-nav">
                 <p><a href="index.html">Home</a></p>
                 <p>| </p> 
-                <p><a href="#">Logout</a></p>
+                <p><a href="#">View Video</a></p>
                 <p>| |</p>  
                 <p><a href="siteplan.html">Site Plan</a></p>
             </div>
             
         </div>
-        <div>
-            <a href="https://wa.link/79triw" target="_blank"><img src="../chamber/images/youtube-icon.png"alt="Youtube-icon"></a>
+        <div class="middle">
+          <a href="https://wa.link/79triw" target="_blank"><img src="icons/whatsapp-icon.svg" alt="Youtube-icon"></a>
+          <a href="https://github.com/Archbee12" target="_blank"><img src="icons/github-icon.svg" alt="twitter-icon"></a>
+          <a href="https://www.linkedin.com/in/deborah-okon-7415b5241/" target="_blank"><img src="icons/linkedin-icon.svg" alt="linkedin-icon"></a>
         </div>
 
     </footer>

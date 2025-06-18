@@ -31,6 +31,10 @@
   font-size: 1.2rem;
 }
 
+.classes {
+  cursor: pointer;
+}
+
 span {
   font-weight: 700;
 }
@@ -69,9 +73,12 @@ span {
 
 .button button {
   padding: .5rem 1rem;
-  background-color: white;
+  background-color: rgb(17, 84, 138);
+  color: white;
+  border: 1px solid black;
   cursor: pointer;
   margin: .25rem;
+  box-shadow: var(--box-shadow);
 }
 
 

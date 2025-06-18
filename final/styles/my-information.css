@@ -32,8 +32,8 @@ textarea {
 input[type=submit] {
   border: none;
   text-align: center;
-  background-color: black;
-  color: white;
+  background-color: var(--accent-color);
+  color: var(--font-color);
   border-radius: 1rem;
   padding: .75rem 1.5rem;
   margin: 2rem 0;
@@ -41,6 +41,7 @@ input[type=submit] {
   -webkit-appearance: none;
   appearance: none;
   cursor: pointer;
+  box-shadow: var(--box-shadow);
 }
 
 input[type=submit]:hover {
@@ -63,9 +64,7 @@ input:-webkit-autofill{
 
 #results {
   grid-column: 1/ -1;
-  background-color: #F4F1DE;
-  padding: 0 1rem;
-  border: 1px solid #E07A5F;
+  padding: 1rem;
   border-radius: 6px;
   max-width: 780px;
   margin: 20px;

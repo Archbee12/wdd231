@@ -14,20 +14,37 @@
   padding: 1rem;
   margin: .5rem;
   display: block;
-
+  background-color: var(--accent-color);
+  color: var(--font-color);
+  box-shadow: 0 2px 4px var(--font-color);
+  cursor: pointer;
 }
 
 .button-card {
-  background-color: white;
   color: black;
 }
 
 .add-btn {
+  background-color: rgb(17, 84, 138);
+  padding: .5rem;
+  margin: .5rem 0;
+  color: white;
   cursor: pointer;
+  box-shadow: 0 2px 4px var(--font-color);
 }
 
-/* button:disabled {
-  cursor: default;
+.drop-btn {
+  background-color: var(--h1-border);
+  padding: .5rem;
+  margin: .5rem 0;
+  color: white;
+  cursor: pointer;
+  box-shadow: 0 2px 4px var(--font-color);
+}
 
-} */
+button:disabled {
+  cursor: default;
+  background-color: #ccc;
+  box-shadow: none;
+}
 

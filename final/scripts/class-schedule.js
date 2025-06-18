@@ -38,6 +38,7 @@ document.addEventListener('DOMContentLoaded', async () => {
             <p><strong>Course Code:</strong> ${course.code}</p>
             <p><strong>Description:</strong> ${course.description}</p>
             <p><strong>Subject:</strong> ${course.subject}</p>
+            <p><strong>Prerequisites:</strong> ${course.prerequisites}</p>
             <p><strong>Credits:</strong> ${course.credits}</p>
         `;
 
