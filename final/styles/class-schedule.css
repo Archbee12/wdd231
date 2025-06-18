@@ -23,6 +23,8 @@
 }
 
 .i {
+  background-color: white;
+  color: var(--blue-color);
   border-radius: 10px;
   border: 1px solid gray;
   padding: 4px 8px;
@@ -83,6 +85,12 @@ span {
   cursor: pointer;
   margin: .25rem;
   box-shadow: var(--box-shadow);
+  transition: var(--transition);
+}
+
+.button button:hover {
+  background-color: var(--accent-color2);
+  color: var(--font-color);
 }
 
 

@@ -12,8 +12,7 @@
 
 #saveCoursesBtn {
   padding: 1rem;
-  margin: .5rem;
-  display: block;
+  margin: 1rem;
   background-color: var(--accent-color);
   color: var(--font-color);
   box-shadow: 0 2px 4px var(--font-color);
