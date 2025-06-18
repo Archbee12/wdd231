@@ -25,27 +25,29 @@ document.addEventListener('DOMContentLoaded', async () => {
         window.location.href = "course-selection.html";
     });
 
-    function showModal(course) {
-        courseModal.innerHTML = `
-            <div class="heading">
-                <div class="title">
-                    <h3>${course.title}</h3> 
-                </div>
-                <div class="button">
-                    <button id="closeModal">❌</button>
-                </div>
-            </div>
-            <p><strong>Course Code:</strong> ${course.code}</p>
-            <p><strong>Description:</strong> ${course.description}</p>
-            <p><strong>Subject:</strong> ${course.subject}</p>
-            <p><strong>Prerequisites:</strong> ${course.prerequisites}</p>
-            <p><strong>Credits:</strong> ${course.credits}</p>
-        `;
-
-        courseModal.showModal();
-
-        document.getElementById('closeModal').addEventListener('click', () => {
-            courseModal.close();
-        });
-    }
+    
 });
+
+function showModal(course) {
+    courseModal.innerHTML = `
+        <div class="heading">
+            <div class="title">
+                <h3>${course.title}</h3> 
+            </div>
+            <div class="button">
+                <button id="closeModal">❌</button>
+            </div>
+        </div>
+        <p><strong>Course Code:</strong> ${course.code}</p>
+        <p><strong>Description:</strong> ${course.description}</p>
+        <p><strong>Subject:</strong> ${course.subject}</p>
+        <p><strong>Prerequisites:</strong> ${course.prerequisites}</p>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+    `;
+
+    courseModal.showModal();
+
+    document.getElementById('closeModal').addEventListener('click', () => {
+        courseModal.close();
+    });
+}

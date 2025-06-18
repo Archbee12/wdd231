@@ -24,31 +24,42 @@ document.addEventListener('DOMContentLoaded', async () => {
         return;
     }
 
+    // const courseModal = document.getElementById('courseModal');
+
+
     courses.forEach(course => {
         const isSelected = selectedCourses.some(c => c.code === course.code);
         const courseItem = document.createElement('div');
         courseItem.classList.add('course-option');
 
         courseItem.innerHTML = `
-            <div>${course.subject} (${course.credits} credits)</div>
-            <div class=button-card>
-              <button class="add-btn" ${isSelected ? 'disabled' : ''}>${isSelected ? "Added" : "Add"}</button>
-              <button class="drop-btn" ${isSelected ? "" : "disabled"}>Drop</button>
+            <div class="course-details">
+                <div><h2>${course.subject} (${course.credits} credits)</h2></div>
+                <div class=button-card>
+                <button class="add-btn" ${isSelected ? 'disabled' : ''}>${isSelected ? "Added" : "Add"}</button>
+                <button class="drop-btn" ${isSelected ? "" : "disabled"}>Drop</button>
+                </div>
             </div>
         `;
+    courseItem.addEventListener('click', (e) => {
+        // prevent modal from opening when clicking a button
+        if (!e.target.classList.contains('add-btn') && !e.target.classList.contains('drop-btn')) {
+            showModal(course);
+        }
+    });
 
-        // Add course functionality (prevent duplicates)
-        courseItem.querySelector('.add-btn').addEventListener('click', () => {
-            if (!selectedCourses.some(c => c.code === course.code)) {
-                selectedCourses.push(course);
-                localStorage.setItem('selectedCourses', JSON.stringify(selectedCourses));
-                
-                // Toggle UI buttons
-                courseItem.querySelector('.add-btn').textContent = "Added";
-                courseItem.querySelector('.add-btn').disabled = true;
-                courseItem.querySelector('.drop-btn').disabled = false;
-            }
-        });
+    // Add course functionality (prevent duplicates)
+    courseItem.querySelector('.add-btn').addEventListener('click', () => {
+        if (!selectedCourses.some(c => c.code === course.code)) {
+            selectedCourses.push(course);
+            localStorage.setItem('selectedCourses', JSON.stringify(selectedCourses));
+            
+            // Toggle UI buttons
+            courseItem.querySelector('.add-btn').textContent = "Added";
+            courseItem.querySelector('.add-btn').disabled = true;
+            courseItem.querySelector('.drop-btn').disabled = false;
+        }
+    });
 
         // Drop course functionality
         courseItem.querySelector('.drop-btn').addEventListener('click', () => {
@@ -70,3 +81,27 @@ document.addEventListener('DOMContentLoaded', async () => {
         window.location.href = "class-schedule.html";
     });
 });
+
+function showModal(course) {
+    courseModal.innerHTML = `
+        <div class="heading">
+            <div class="title">
+                <h3>${course.title}</h3> 
+            </div>
+            <div class="button">
+                <button id="closeModal">❌</button>
+            </div>
+        </div>
+        <p><strong>Course Code:</strong> ${course.code}</p>
+        <p><strong>Description:</strong> ${course.description}</p>
+        <p><strong>Subject:</strong> ${course.subject}</p>
+        <p><strong>Prerequisites:</strong> ${course.prerequisites}</p>
+        <p><strong>Credits:</strong> ${course.credits}</p>
+    `;
+
+    courseModal.showModal();
+
+    document.getElementById('closeModal').addEventListener('click', () => {
+        courseModal.close();
+    });
+}

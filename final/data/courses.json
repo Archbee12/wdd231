@@ -2,7 +2,7 @@
   {
     "title": "Object-Oriented Programming",
     "code": "CSE 210",
-    "subject": "CSE",
+    "subject": "Programming with Classes",
     "description": "Introduction to object-oriented software development using classes and objects. Covers abstraction, encapsulation, inheritance, and polymorphism.",
     "prerequisites": "CSE 110",
     "credits": 3
@@ -18,7 +18,7 @@
   {
     "title": "Data Structures and Algorithms",
     "code": "CSE 212",
-    "subject": "CSE",
+    "subject": "Data Structures and Algorithms",
     "description": "Covers abstract data types, recursive algorithms, and fundamental data structures such as stacks, queues, linked lists, trees, and graphs.",
     "prerequisites": "CSE 210",
     "credits": 3
@@ -90,7 +90,7 @@
   {
     "title": "Web Engineering",
     "code": "CSE341",
-    "subject": "Web Services",
+    "subject": "Introduction to Web Services",
     "description": "Full-stack web development including server-side technologies, RESTful APIs, authentication, and deployment.",
     "prerequisites": "CSE 210, CSE 340",
     "credits": 3
@@ -98,7 +98,7 @@
   {
     "title": "Operating Systems",
     "code": "CSE 320",
-    "subject": "CSE",
+    "subject": "Introduction to Operating Systems",
     "description": "Introduction to operating system principles including process management, memory management, and file systems.",
     "prerequisites": "CSE 212",
     "credits": 3

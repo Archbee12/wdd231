@@ -48,3 +48,6 @@ button:disabled {
   box-shadow: none;
 }
 
+.select, .course-select {
+  text-align: center;
+}
