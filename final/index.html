@@ -13,11 +13,11 @@
     <meta property="og:image" content="https://archbee12.github.io/wdd231/final/images/logo.png">
     <meta property="og:url" content="https://archbee12.github.io/wdd231/final/index.html">
     <link rel="icon" href="favicon/favicon.ico"  class="favicon">
-    <link rel="stylesheet" href="../wdd231/styles/normalize.css">
+    <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
-    <script defer src="scripts/script.js" type="module"></script>
+    <script src="scripts/script.js" type="module"></script>
     <script defer src="scripts/navigation.js"></script>
-    <script defer src="scripts/holds.mjs" type="module"></script>
+    <script src="scripts/holds.mjs" type="module"></script>
     <script src=".././chamber/scripts/getdates.js" type="module"></script>
 </head>
 
@@ -32,7 +32,7 @@
         <div class="logo">
             <div>
                 <a href="index.html">
-                    <img src="images/logo.png" G alt="">
+                    <img src="images/logo.png" alt="">
                 </a>
             </div>
             <div class="hamburger">
@@ -50,7 +50,7 @@
                     <div class="icons-count">0</div>
                     <div class="tooltip">Hold</div>
 
-                    <div class="custom-dialog" id="holds-dialog"></div>
+                    <div class="custom-dialog"></div>
 
                 </div>
                 <div class="icons-container">
@@ -58,7 +58,7 @@
                     <div class="icons-count">0</div>
                     <div class="tooltip">Alert</div>
 
-                    <div class="custom-dialog" id="holds-dialog"></div>
+                    <div class="custom-dialog"></div>
 
                 </div>
             </div>
@@ -67,8 +67,8 @@
             <div id="academics" class="menu-item">
                 <div class="menu-title">Academics</div>
                 <div class="menu-dropdown">
-                    <a href="program.html">My Program</a>
-                    <a href="certificate.html">Certificates and Degrees</a>
+                    <!-- <a href="program.html">My Program</a>
+                    <a href="certificate.html">Certificates and Degrees</a> -->
                     <!-- <a href="#">Degree Progress Audit</a> -->
                     <a href="class-schedule.html">Class Schedule</a>
                     <!-- <a href="#">Gatherings</a>
@@ -170,7 +170,7 @@
                     </div>
 
                     <div id="courses-details"></div>
-                    <dialog id="courseModal" class="course-modal"></dialog>
+                    <dialog id="courseModal"></dialog>
                 </div>
             </div>
         </div>
@@ -196,9 +196,9 @@
             
         </div>
         <div class="middle">
-          <a href="https://wa.link/79triw" target="_blank"><img src="icons/whatsapp-icon.svg" alt="Youtube-icon"></a>
-          <a href="https://github.com/Archbee12" target="_blank"><img src="icons/github-icon.svg" alt="twitter-icon"></a>
-          <a href="https://www.linkedin.com/in/deborah-okon-7415b5241/" target="_blank"><img src="icons/linkedin-icon.svg" alt="linkedin-icon"></a>
+          <a href="https://wa.link/79triw" target="_blank"><img src="icons/whatsapp-icon.svg" alt="Youtube-icon" loading="lazy"></a>
+          <a href="https://github.com/Archbee12" target="_blank"><img src="icons/github-icon.svg" alt="twitter-icon" loading="lazy"></a>
+          <a href="https://www.linkedin.com/in/deborah-okon-7415b5241/" target="_blank"><img src="icons/linkedin-icon.svg" alt="linkedin-icon" loading="lazy"></a>
         </div>
 
     </footer>
