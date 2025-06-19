@@ -30,13 +30,10 @@
   padding: 4px 8px;
 }
 
-.class-term div:nth-child(2) {
+.class-term span {
   font-size: 1.2rem;
 }
 
-.class-term span {
-  font-size: 1.5rem;
-}
 .classes {
   cursor: pointer;
 }
@@ -46,19 +43,16 @@ span {
 }
 
 .course-title {
-  font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
 }
 
 .course-credits {
-  font-size: 14px;
   color: #555;
 }
 
 .status {
   float: inline-end;
-  font-size: 14px;
   color: green;
   display: flex;
   align-items: center;
@@ -111,6 +105,7 @@ span {
   }
 
   .prev, .next {
+    order: 0;
     flex: 0 1 auto;
     white-space: nowrap; /* Prevents wrapping */
   }

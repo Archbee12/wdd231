@@ -34,10 +34,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         courseItem.innerHTML = `
             <div class="course-details">
-                <div><h2>${course.subject} (${course.credits} credits)</h2></div>
+                <div><h3>${course.subject} (${course.credits} credits)</h3></div>
                 <div class=button-card>
                 <button class="add-btn" ${isSelected ? 'disabled' : ''}>${isSelected ? "Added" : "Add"}</button>
-                <button class="drop-btn" ${isSelected ? "" : "disabled"}>Drop</button>
+                <button class="drop-btn" ${isSelected ? "" : "disabled"}>${isSelected ? "Drop" : "Dropped"}</button>
                 </div>
             </div>
         `;
@@ -57,23 +57,25 @@ document.addEventListener('DOMContentLoaded', async () => {
             // Toggle UI buttons
             courseItem.querySelector('.add-btn').textContent = "Added";
             courseItem.querySelector('.add-btn').disabled = true;
+            courseItem.querySelector('.drop-btn').textContent = "Drop";
             courseItem.querySelector('.drop-btn').disabled = false;
         }
     });
 
-        // Drop course functionality
-        courseItem.querySelector('.drop-btn').addEventListener('click', () => {
-            selectedCourses = selectedCourses.filter(c => c.code !== course.code);
-            localStorage.setItem('selectedCourses', JSON.stringify(selectedCourses));
+    // Drop course functionality
+    courseItem.querySelector('.drop-btn').addEventListener('click', () => {
+        selectedCourses = selectedCourses.filter(c => c.code !== course.code);
+        localStorage.setItem('selectedCourses', JSON.stringify(selectedCourses));
 
-            // Toggle UI buttons
-            courseItem.querySelector('.add-btn').textContent = "Add";
-            courseItem.querySelector('.add-btn').disabled = false;
-            courseItem.querySelector('.drop-btn').disabled = true;
-        });
-
-        courseList.appendChild(courseItem);
+        // Toggle UI buttons
+        courseItem.querySelector('.add-btn').textContent = "Add";
+        courseItem.querySelector('.add-btn').disabled = false;
+        courseItem.querySelector('.drop-btn').textContent = "Dropped";
+        courseItem.querySelector('.drop-btn').disabled = true;
     });
+
+    courseList.appendChild(courseItem);
+});
 
     // Save and return to class-schedule
     saveBtn.addEventListener('click', () => {

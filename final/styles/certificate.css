@@ -4,12 +4,12 @@
 }
 
 .content {
-  padding: 20px 40px;
+  padding: 20px;
   /* line-height: 150%; */
 }
 
 h1 {
-	font-size: 30px;
+	font-size: clamp(1.5rem 7vw 2rem);
 	position: relative;
 	color: #343a40;
 	padding-bottom: 20px;

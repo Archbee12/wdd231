@@ -9,6 +9,9 @@
 	--default: #ccc;
 	--box-shadow: 0 2px 4px var(--font-color);
   --transition: background-color 0.3s ease-out;
+
+	/* Font */
+	--h1: "Merriweather" Roboto;
 }
 
 body {
@@ -63,6 +66,7 @@ main {
 }
   
 .menu-dropdown a {
+	display: flex;
 	text-decoration: none;
 	color: #333;
 	font-size: 12px;
@@ -73,20 +77,20 @@ a.active {
 	font-weight: 700;
 }
 
-.menu-dropdown a:hover {
+a:hover {
 	background-color: #ffcd1842;
 	width: 100%;
-	/* overflow: hidden; */
+	overflow: hidden;
 }
 
 .menu-dropdown  {
 	max-height: 0;
 	overflow: hidden;
-	transition: max-height 0.5s ease-in-out;
+	transition: max-height 0.8s ease-out;
 }
 
 .menu-item.active .menu-dropdown {
-	max-height: 100px;
+	max-height: 220px;
 }
   
 .menu-item.active .menu-dropdown {
@@ -268,6 +272,10 @@ a.active {
 	margin: 0 auto;
 	align-items: center;
 	justify-content: space-between;
+}
+
+h1 {
+	font-family: var(--h1);
 }
 
 .card-title {
@@ -584,14 +592,14 @@ footer::after {
 		max-height: 300px;
 	}
 
-	.menu-item:nth-child(2) {
+	.menu-item:nth-child(1) {
 		border-bottom: 8px solid rgba(37, 60, 88, 0.954);
 	}
 
 	nav ul {
 		max-height: 0;
 		overflow: hidden;
-		transition: max-height 0.5s ease-in-out;
+		transition: max-height 0.5s ease-out;
 	}
 
 	footer {
