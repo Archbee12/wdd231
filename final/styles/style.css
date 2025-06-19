@@ -77,7 +77,7 @@ a.active {
 	font-weight: 700;
 }
 
-a:hover {
+.menu-dropdown a:hover {
 	background-color: #ffcd1842;
 	width: 100%;
 	overflow: hidden;
